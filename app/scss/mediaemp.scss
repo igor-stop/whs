@@ -1,0 +1,253 @@
+@media only screen and (max-width:1024px) {
+	.title {
+		font-size: 26px;
+		line-height: 1.3;
+		&::after {
+			height: 55%;
+			left: 10px;
+			top: 15px; 
+		}
+		&--{
+			&small{
+				font-size: 21px;
+			}
+			&hidden {
+				display: inline-block;
+				line-height: 53px;
+				font-size: 40px;
+				margin-bottom: 40px;
+			}
+			&hide {
+				display: none;
+			}
+		}
+	}
+    .secStart {
+		padding: 20px 15px;
+		text-align: center;
+		&__{
+			&logo {
+				margin-bottom: 70px;
+			}
+			&text {
+				font-size: 16px;
+
+			}
+		}
+	}
+	.secWe {
+		background-color:  rgba(69, 68, 107, 0.08);
+		padding: 50px 15px;
+		text-align: center;
+		&__{
+			
+			&left {
+
+			}
+			&right {
+				
+			}
+			&imgWrap {
+				max-width: 270px;
+				margin: 0 auto 30px;
+				&::after {
+					background-color: #F1A32F;
+				}
+			}
+			&textWrap {
+				max-width: 100%;
+			}
+			&text {
+				font-size: 16px;
+				line-height: 1.3;
+				text-align: left;
+			}
+		}
+	}
+
+	.highLight{
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 20px 10px 35px;
+		font-size: 16px;
+		line-height: 1.3;
+
+		 &__ {
+		 	&in{
+				right: 50%;
+				transform: translateX(50%) translateY(50%);
+			}
+		}
+	}
+
+	.secSkills{
+		padding: 50px 15px;
+
+		&::before {
+			height: 100%;
+		}
+		&__ {
+			&paper {
+				padding: 50px 35px;
+				background: #F0F1F6;
+				border-radius: 22px;
+				box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+				max-width: 560px;
+
+				&::before {
+					display: none;
+				}
+			}
+			&title {
+				line-height: 1.1;
+				font-size: 23px;
+				margin-bottom: 30px;
+			}
+			&listItem {
+				max-width: 100%;
+				width: 100%;
+			}
+			&item {
+				font-size: 16px;
+			}
+			&plus {
+				margin-top: 20px;
+				width: 100%;
+				max-width: 100%;
+			}
+			&bottom{
+				justify-content: center;
+				text-align: center;
+			}
+		}
+	}
+	.secForm {
+		padding: 50px 15px;
+		&__{
+			&cont {
+				padding: 40px 15px;
+				box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+			}
+			&text {
+				font-size: 16px;
+				margin: 20px 0;
+			}
+			&inputWrap {
+				width: 100%;
+				&--{
+					&ta{
+						width: 100%;
+						margin-bottom: 40px;
+					}
+				}
+			}
+			&input {
+				font-size: 14px;
+				height: 55px;
+				&--{
+					&ta{
+						height: 100px;
+					}
+				}
+
+			}
+		}
+	}
+	.footer{
+		padding: 35px 15px;
+		&__ {
+			&cont {
+				flex-direction: column;
+			}
+			&list {
+				margin: 30px 0;
+			}
+			&write{
+				font-size: 16px;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+		font-size: 14px
+	}
+	:-moz-placeholder {
+		font-size: 14px
+	}
+	::-moz-placeholder {
+		font-size: 14px
+	}
+	:-ms-input-placeholder {
+		font-size: 14px
+	}
+}
+@media only screen and (max-width: 768px){
+    .secStart {
+		padding: 40px 15px 120px;
+		text-align: center;
+		&__{
+			&head {
+				.title {
+					display: inline;
+					background-color: #FFD22D;
+					line-height: 1.5;
+					&::after{
+						display: none;
+					}
+				}
+			}
+			&text {
+				max-width: 100%;
+				margin-bottom: 60px;
+			}
+			&content {
+				width: 100%;
+			}
+			&right {
+				display: none;
+			}
+		}
+	}
+
+	.secWe {
+		padding: 30px 15px 60px;
+		overflow: hidden;
+		&__{
+			&wrap {
+				align-items: flex-start;
+				position: relative;
+			}
+			
+			&left {
+				width: 60%;
+				position: absolute;
+				transform: translateX(-70px) translateY(-10px);
+			}
+			&right {
+				width: 100%;
+			}
+			&imgWrap {
+				max-width: 194.59px;
+				width: 100%;
+			}
+			&text {
+				max-width: 59%;
+				width: 100%;
+				display: block;
+				margin-left: auto;
+				margin-bottom: 80px;
+			}
+		}
+	}
+
+	.secSkills{
+		&__ {
+			&title {
+				font-size: 21px;
+			}
+			&paper {
+				padding: 30px 15px;
+			}
+		}
+	}
+}

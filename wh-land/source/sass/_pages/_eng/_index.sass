@@ -1,0 +1,861 @@
+/* YOUR STYLES ARE STARTING HERE */
+.enContainer
+	max-width: 1070px
+	width: 100%
+	padding: 0 20px
+	margin: 0 auto
+	&--
+		&less 
+			max-width: 860px
+		&large
+			max-width: 1200px
+
+.enButton
+	width: 208px
+	height: 50px
+	border-radius: 4px
+	background-color: $light
+	@include flex(row, center, center, nowrap)
+	text-align: center
+	color: #28365a
+	font-family: $mainBold
+	font-size: 14px
+	line-height: 16px
+	text-transform: uppercase
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25)
+	transition: all .15s
+	&:hover
+		transform: scale(1.03)
+		box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15)
+	&:active
+		transform: scale(1)
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+
+	&--
+		&dark
+			color: $white
+			background-color: $tcolor
+		&big 
+			width: 243px
+
+.title 
+	width: 100%
+	text-align: center
+	margin-bottom: 38px
+	&__
+		&text
+			padding: 0 10px
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 32px  
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+
+.enFirst
+	position: relative
+	background: $tcolor linear-gradient(246deg, rgba(0, 41, 127, 0) 0%, rgba(89, 41, 130, 0.5) 100%)
+	padding: 70px
+	color: $white
+	min-height: 100vh
+	@include flex(row, center, center, nowrap)
+	&__
+		&row
+			margin-top: 10px
+			@include flex(row, space-between, center, nowrap)
+		&left 
+			max-width: 565px
+			width: 100%
+			padding-right: 10px
+		&right 
+			max-width: 475px 
+			width: 100%
+		&img
+			width: 100%
+			&--
+				&mobile
+					width: 100%
+					display: none 
+					margin: 0 0 40px
+
+		&title
+			color: $white
+			font-family: $mainBold
+			font-size: 38px
+			line-height: 1.2
+			margin-bottom: 10px
+			& > span 
+				position: relative
+				z-index: 2
+				background: linear-gradient(to bottom, transparent 0%,  transparent 65%,  $light 65%, $light 90%, transparent 90%,  transparent 100%) no-repeat 15px 0 
+		&for
+			font-size: 24px
+			position: relative
+			display: inline-block
+			margin-bottom: 25px
+			&::after
+				content: url(../img/gb.png)
+				position: absolute
+				left: calc(100% + 5px)
+				top: -3px
+
+		&description
+			color: #fff
+			font-family: $mainMedium
+			font-size: 18px
+			line-height: 1.4
+			display: block
+			margin-bottom: 35px
+			& > b 
+				font-family: $mainBold
+
+		&start
+			margin-top: 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			p
+				font-size: 16px
+				font-weight: bold
+			span 
+				font-size: 14px
+		&startIcon
+			margin-right: 12px
+
+
+.enGlish
+	padding: 90px 0 130px
+	&__
+		&subtitle
+			text-align: center
+			margin-top: -15px
+			opacity: .85
+			margin-bottom: 36px
+		&row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			margin: 0 -12px
+			margin-bottom: 16px
+		&side
+			padding: 0 12px
+			width: 50%
+		&left 
+			text-align: right
+		&li
+			color: #2b2a2f
+			font-size: 14px
+			font-weight: 600
+			line-height: 16px
+		&digitsLi
+			height: 11px
+			background-image: linear-gradient(266deg, rgba(89, 41, 130,1) 0%, rgba(0, 41, 127, 1) 100%)
+			position: relative
+			&--
+				&active
+					background: #ffd600
+			&::after
+				content: attr(data-value)
+				position: absolute
+				color: #2b2a2f
+				font-size: 14px
+				font-weight: 600
+				top: -2px
+				left: calc(100% + 11px)
+		&stats
+			display: none
+			padding: 0 15px
+		&statsImg
+			max-width: 140px
+			width: 100%
+			margin: 0 auto 20px
+			display: block
+			border-radius: 50%
+			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15)
+		&statsText
+			font-size: 16px
+			line-height: 20px
+			text-align: center
+			color: #2B2A2F
+			font-family: $mainBold
+			margin-bottom: 7px
+		&under
+			display: block
+			text-align: center
+			font-size: 12px
+			color: #2B2A2F
+
+			
+.enBefore
+	padding-bottom: 104px
+	&__
+		&row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+		&left 
+			max-width: 425px
+			width: 100%
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			align-items: center
+		&right
+			max-width: 550px
+			width: 100%
+		&li
+			color: #2b2a2f
+			padding-left: 30px
+			position: relative
+			line-height: 18px
+			font-size: 16px
+			margin-bottom: 15px
+			&::before 
+				content: url(../img/cross.svg)
+				position: absolute
+				left: 0
+				top: 1px
+			b
+				font-family: $mainBold
+
+
+.enAfter
+	padding-bottom: 77px
+	&__
+		&row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+		&left 
+			max-width: 480px
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+		&right
+			max-width: 385px
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+		&li 
+			padding-left: 85px
+			position: relative
+			margin-bottom: 24px
+			@for $i from 1 through 5
+				&:nth-child(#{$i})
+					.enAfter__icon
+						background-image: url('../img/enAfter/#{$i}.svg')
+
+		&icon
+			position: absolute
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			background-color: #ffd22e
+			background-repeat: no-repeat
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			background-position: center
+		&text 
+			color: #2b2a2f
+			font-size: 16px
+			line-height: 18px
+			b
+				font-family: $mainBold
+
+.enTeachers
+	padding-bottom: 70px
+	.title
+		margin-bottom: 45px
+
+.enTeacher
+	color: #2b2a2f
+	display: flex
+	justify-content: flex-start
+	margin-bottom: 40px
+	p 
+		font-size: 14px
+		line-height: 17px
+		margin-bottom: 10px
+		b
+			font-family: $mainBold
+	&__
+		&left
+			width: 156px
+			margin-right: 25px
+		&imgWrap
+			border-radius: 10px
+			background-color: #ffd22e
+			
+		&img
+			border-radius: 10px
+			position: relative
+			bottom: 2px
+			right: 4px
+			width: 151px
+
+		&right 
+			width: 100%
+		&who
+			font-size: 14px
+			font-weight: 500
+			line-height: 16px
+			margin-bottom: 2px
+		&name
+			font-size: 24px
+			font-family: $mainBlack
+			margin-bottom: 10px
+		
+
+.enWill
+	padding-bottom: 70px
+	&__
+		&row
+			display: flex
+			justify-content: space-between
+		&ul
+			padding: 0 15px
+			max-width: 430px
+			width: 100%
+		&li
+			margin-bottom: 33px
+			position: relative
+			color: #2b2a2f
+			font-size: 16px
+			line-height: 18px
+			padding-left: 70px
+			b
+				font-family: $mainBold
+		&icon
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			width: 50px
+			height: 50px
+			background-color: #ffd22e
+			border-radius: 50%
+			background-repeat: no-repeat
+			background-position: center
+
+
+
+
+.enCourse
+	padding-bottom: 85px
+	.enContainer
+		max-width: 1035px
+	p
+		font-size: 14px
+		color: #2b2a2f
+		line-height: 17px
+		display: block
+		margin-bottom: 9px
+		padding: 0 5px
+		b
+			font-family: $mainBold
+	.title 
+		margin-bottom: 45px
+	&__
+		&row
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			margin: 0 -15px
+		&column 
+			width: 240px
+			padding: 0 15px
+			margin-bottom: 30px
+			&:not(:first-child)
+				.enCourse__caption
+					&::before
+						content: url(../img/course-head-arr.svg)
+						position: absolute
+						right: 100%
+						top: 20px
+		&caption
+			width: 100%
+			border-radius: 4px
+			display: block
+			background-image: linear-gradient(249deg, rgba(89, 41, 130, 1) 0%, rgba(0, 41, 127, 1) 100%)
+			color: #ffffff
+			font-size: 16px
+			line-height: 20px
+			text-align: center
+			padding: 7px 5px 13px
+			margin-bottom: 13px
+			font-family: $mainBold
+			position: relative
+
+.enPlans
+	padding-bottom: 55px
+	.enButton
+		width: 100%
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+	.title
+		margin-bottom: 47px
+	&__
+		&row
+			margin: 0 -8px
+			display: flex
+			justify-content: space-between
+
+		&column
+			width: 33.333%
+			padding: 0 8px
+		&enPlan
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25)
+			background-color: #fff
+			padding: 37px 32px
+			border-radius: 4px
+			color: #2b2a2f
+			&--
+				&accent
+					background: linear-gradient(204deg, rgba(89, 41, 130, 1) 0%, rgba(0, 41, 127, 1) 100%)
+					color: #fff
+		&name
+			margin-bottom: 20px
+			font-family: $mainBold
+			display: block
+			width: 100%
+			&--
+				&this
+					position: relative
+					&::after
+						content: url(../img/star.svg)
+						position: absolute
+						right: 0
+						top: 0
+
+		&cost 
+			font-size: 26px
+			font-family: $mainBold
+			line-height: 29px
+			margin-bottom: 15px
+			&--
+				&crown
+					position: relative
+					&::after
+						content: url(../img/crown.svg)
+						position: absolute
+						right: 0
+						top: 0
+		&ul
+			margin-bottom: 30px
+		&li
+			font-size: 14px
+			font-weight: 400
+			padding-left: 21px
+			position: relative
+			margin-bottom: 15px
+
+			&::before 
+				content: url(../img/check.svg)
+				left: 0
+				top: 0
+				position: absolute
+
+			&--disabled
+				opacity: 0.5
+				&::before 
+					display: none
+		&gift
+			margin-top: 26px
+			display: flex
+			justify-content: flex-start
+			align-items: center
+		&giftImg
+			margin-right: 16px
+		&giftText
+			font-size: 12px
+			b
+				font-family: $mainBold
+		&start
+			background: linear-gradient(201.29deg, #592982 -11.9%, #00297F 113.38%)
+			border-radius: 4px
+			max-width: 870px
+			padding: 20px 30px
+			position: relative
+			font-size: 22px
+			font-weight: bold
+			text-align: center
+			margin: 57px auto 0
+			color: #fff
+			&::before 
+				content: url(../img/start-up.svg)
+				margin-right: 10px
+				vertical-align: sub
+				line-height: 20px
+
+.enFb
+	padding-bottom: 130px
+	.swiper-slide 
+		padding: 20px 12px 20px
+		box-sizing: border-box
+	&__
+		&container
+			position: relative
+			width: 100%
+		&inner
+			padding: 24px 24px 20px
+			box-shadow: 0 1px 13px rgba(0, 0, 0, 0.15)
+			width: 100%
+		&name
+			color: #000
+			font-size: 16px
+			font-family: $mainBold
+			line-height: 19px
+			margin-bottom: 3px
+		&who
+			color: rgba(#000, .5)
+			font-size: 14px
+			font-weight: 600
+			line-height: 16px
+			margin-bottom: 12px
+		&text 
+			color: #2b2a2f
+			font-size: 12px
+			font-weight: 500
+			line-height: 14px
+			max-height: 170px
+			overflow-y: auto
+			margin-bottom: 20px
+			padding-right: 5px
+			display: block
+			&::-webkit-scrollbar
+				width: 3px
+			&::-webkit-scrollbar-track 
+				background-color: rgba(#cecece, .3)
+			&::-webkit-scrollbar-thumb 
+				background-color: #cecece
+
+		&nav
+			top: 100px
+			&.swiper-button-prev
+				left: -25px
+				top: 100px
+			&.swiper-button-next
+				right: -25px
+				top: 100px
+
+.enChange
+	padding-bottom: 130px
+
+	.enButton
+		margin: 0 auto
+	&__
+		&row
+			display: flex
+			justify-content: space-between
+		&col
+			max-width: 158px
+			width: 100%
+		&main 
+			text-align: center
+			max-width: 456px
+			width: 100%
+			color: #2b2a2f
+			font-size: 16px
+			line-height: 18px
+			p
+				display: block
+				margin-bottom: 20px
+				&:nth-child(2)
+					position: relative
+					&::after 
+						content: url(../img/airline.svg)
+						position: absolute
+						right: calc(50% + 220px)
+						top: -40px
+						z-index: -1
+					&::before 
+						content: url(../img/airplane.svg)
+						position: absolute
+						right: calc(50% + 295px)
+						top: -45px
+						z-index: -1
+
+			b
+				font-family: $mainBold
+			span
+				display: block
+				margin-bottom: 40px
+				position: relative
+				&::after
+					content: url(../img/en-long-arrow.svg)
+					position: absolute
+					left: calc(50% + 90px)
+					top: -47px
+					z-index: -1
+
+.enTry
+	padding-bottom: 100px
+	.enButton
+		margin: 0 auto
+		width: 240px
+	b
+		font-family: $mainBold
+	&__
+		&wrap 
+			max-width: 589px
+			width: 100%
+			margin: 0 auto
+			text-align: center
+			color: #2b2a2f
+			font-size: 16px
+			font-weight: 400
+			line-height: 18px
+			p 
+				margin-bottom: 26px
+		&accent
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&ul
+			max-width: 550px
+			width: 100%
+			text-align: left
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			margin: 0 auto 29px
+		&li
+			margin-bottom: 3px
+			width: 50%
+			position: relative
+			padding-left: 12px
+			&::before
+				content: ''
+				width: 5px
+				height: 5px
+				position: absolute
+				background-color: #2b2a2f
+				border-radius: 50%
+				left: -4px
+				top: 7px
+.enQ
+	padding: 75px 0
+	background-image: linear-gradient(249deg, rgba(89, 41, 130, 1) 0%, rgba(0, 41, 127, 1) 100%)
+	&__
+		&title
+			color: #fff
+			font-size: 32px
+			font-family: $mainBold
+			line-height: 38px
+			text-align: center
+		&text 
+			max-width: 522px
+			width: 100%
+			text-align: center
+			margin: 15px auto 0
+			color: #fff
+			font-size: 16px
+			line-height: 19px
+			a
+				font-family: $mainBold
+				color: #fff
+				*
+						fill: #fff
+
+			em
+				text-decoration: underline
+				font-style: normal
+
+			b
+				font-family: $mainBold
+
+.ig-icon
+	vertical-align: middle
+
+.enCard
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto 85px
+	min-height: 240px
+	border-radius: 8px 
+	position: relative
+	padding: 35px 0
+	background: $tcolor linear-gradient(246deg, rgba(0, 41, 127, 0) 0%, rgba(89, 41, 130, 0.5) 100%)
+	@include flex(column, center, center, nowrap)
+	.mtButton
+		position: relative
+		z-index: 1
+
+
+	&--
+		&light
+			background: $light
+			.mtCard__caption 
+				color: $tcolor
+		&special
+			@include flex(column, flex-end, center, nowrap)
+			padding-bottom: 23px
+			.mtCard__caption
+				margin-bottom: 8px
+			.mtButton
+				margin-bottom: 20px
+			&::before 
+				content: url('../img/tkts.svg')
+				position: absolute
+				left: 0
+				bottom: -5px
+				z-index: 0
+			&::after 
+				content: url('../img/palm.svg')
+				position: absolute
+				right: 0
+				bottom: -5px
+				z-index: 0
+		&watch
+			&::after 
+				content: url('../img/sandclosk.svg')
+				position: absolute
+				right: 0
+				bottom: -5px
+				z-index: 0
+	&__
+		&caption
+			color: $white
+			font-size: 32px
+			font-family: $mainBlack
+			line-height: 1.2
+			text-align: center
+			max-width: 950px
+			width: 100%
+			margin: 0 auto
+			position: relative
+			z-index: 1
+			&--
+				&small
+					margin-bottom: 25px
+		&dreamer
+			z-index: 1
+			width: 345px
+			position: absolute
+			right: -70px
+			top: -355px
+		&engText
+			font-weight: 500
+			font-size: 18px
+			text-align: center
+			color: #fff
+			max-width: 605px
+			margin-bottom: 30px	
+		&descr
+			margin-bottom: 45px
+			color: rgba($tcolor, .8)
+			text-align: center
+			font-family: $mainMedium
+			font-size: 20px
+			line-height: 27px
+			max-width: 685px
+			width: 100%
+			letter-spacing: 1px
+			position: relative
+			& > b
+				font-family: $mainBold
+		&tip
+			color: rgba($tcolor, .5)
+			font-family: $mainMedium
+			font-size: 14px
+			font-weight: 600
+			z-index: 1
+			visibility: hidden
+		&start
+			font-size: 22px
+			color: #fff
+			font-weight: bold
+			position: relative
+			margin-bottom: 25px
+			&::before
+				content: url(../img/start-up.svg)
+				margin-right: 17px
+				position: absolute
+				right: 100%
+				top: -2px
+
+.cbtns
+	margin: 40px auto 0px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	a
+		margin: 0 15px 20px
+
+.cbtns--sb
+	justify-content: space-between
+
+.cbtns--column
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	.cbtn
+		margin-bottom: 30px
+
+.cbtn
+	width: 206px
+	height: 45px
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 5px
+	color: #FFF
+	font-family: 'Montserrat Bold'
+	padding: 0 20px
+	transition: box-shadow .4s
+
+.cbtn--mes
+	background-color: #008CFF
+
+.cbtn--vk
+	background-color: #31648B
+
+.cbtn--tg
+	background-color: #06B0EA
+
+.cbtn__icon
+	width: 24px
+	height: 24px
+	display: block
+	margin-right: 8px
+
+
+/* AND END HERE */
+
+@media screen and (max-width: 1280px)
+	@import '_1280.sass'
+
+@media screen and (max-width: 1024px)
+	@import '_1024.sass'
+
+@media screen and (max-width: 768px)
+	@import '_768.sass'
+
+@media screen and (max-width: 320px)
+	@import '_320.sass'

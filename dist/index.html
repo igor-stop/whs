@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Web Hero School</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--OG-->
+	<meta property="og:title" content="Web Hero School">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://webheroschool.ru">
+	<meta property="og:image" content="img/ogimage.jpg">
+	<!--/OG-->
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="192x192" href="img/favicons/webclip.jpg">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicons/webclip.jpg">
+	<link rel="shortcut icon" href="img/favicons/favicon.jpg" type="image/x-icon">
+	<!--/favicon-->
+	
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>
+	! function(e) { "use strict";
+
+		function t(e, t, n) { e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n) };
+
+		function n(t, n) { return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n };
+
+		function a(t, a) { if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
+			else { var s = r.createElement("link");
+				s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t } }
+
+		function l(e, t) { var n = new XMLHttpRequest;
+			n.open("GET", t, !0), n.onreadystatechange = function() { 4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t) }, n.send() }
+
+		function o(e) { var t = r.createElement("style");
+			t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e } var r = e.document;
+		e.loadCSS = function(e, t, n) { var a, l = r.createElement("link"); if (t) a = t;
+			else { var o;
+				o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1] } var s = r.styleSheets;
+			l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling); var c = function(e) { for (var t = l.href, n = s.length; n--;)
+					if (s[n].href === t) return e();
+				setTimeout(function() { c(e) }) }; return l.onloadcssdefined = c, c(function() { l.media = n || "all" }), l }, e.loadLocalStorageCSS = function(l, o) { n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function() { a(l, o) }) } }(this);
+	</script>
+
+	<!-- Load Custom CSS Start -->
+		<script>loadCSS("css/libs.min.css", false, "all");</script>
+		<script>loadCSS("css/main.min.css", false, "all");</script>
+	<!--Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+	
+	<!-- Custom Browsers Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#45446c">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#45446c">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#45446c">
+	<!-- Optimized loading JS Start -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function(d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter49661218 = new Ya.Metrika2({
+						id: 49661218,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				} catch (e) {}
+			});
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function() { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/49661218" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- PIXEL -->
+	<script type="text/javascript">
+		! function() { var t = document.createElement("script");
+		t.type = "text/javascript", t.async = !0, t.src = "https://vk.com/js/api/openapi.js?158", t.onload = function() { VK.Retargeting.Init("VK-RTRG-271053-7iNcr"), VK.Retargeting.Hit() }, document.head.appendChild(t) }();
+	</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-271053-7iNcr" style="position:fixed; left:-999px;" alt=""/></noscript>
+	<!-- /PIXEL -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87974690-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-87974690-2');
+	</script>
+	<!-- /Global site tag (gtag.js) - Google Analytics -->
+
+	<!--getresponse metrica
+	<script type="text/javascript">
+		var gr_goal_params = {
+			param_0: '',
+			param_1: '',
+			param_2: '',
+			param_3: '',
+			param_4: '',
+			param_5: ''
+		};
+	</script>
+	<script type="text/javascript" src="https://app.getresponse.com/goals_log.js?p=990906&u=SVmJ3"></script>
+	/getresponse metrica-->
+	
+
+</head>
+
+<body>
+	<main>
+		<section class="banner dark-theme" id="banner" style="background-image: url(img/1.png);">
+			<a class="logo" href="/">Web Hero School</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h1>Обучаем <br />веб-разработке</h1>
+						<b class="main-subtitle">за три месяца с нуля до первого трудоустройства с гарантированным доходом от 30 000 ₽</b>
+						<p><b><a href="/">Web Hero School</a></b> &mdash; это школа веб-разработки, которая включает в себя не только теорию и практику, но и обучает необходимым для трудоустройства навыкам.
+							<br />
+							<br /> Автор школы &mdash; практикующий веб-разработчик, с опытом работы в таких компаниях, как <b><a href="https://2gis.ru" target="_blank">2GIS</a></b>, <b><a href="https://mail.ru/" target="_blank">Mail.ru</a></b> и <b><a href="https://www.tinkoff.ru/" target="_blank">Tinkoff.ru</a></b> &ndash; Дарья Пушкарская.</p>
+						<a class="buy-btn bright-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_banner'); return true;">Приступить к обучению</a></div>
+				</div>
+			</div>
+			<div class="motto">From Zero to <b>Web Hero</b></div>
+		</section>
+		<section class="if-u" id="if-u">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6"><img alt="" class="escort-img" src="img/2.png" /></div>
+						<div class="col-lg-6">
+							<h2 class="section-title">Эта программа<br> подойдет тебе, <br>если:</h2>
+							<ul class="section-list">
+								<li>твоя текущая работа не приносит тебе удовольствия и финансовой независимости;</li>
+								<li>ты заканчиваешь универ или колледж, но так и не понял, кем хочешь стать;</li>
+								<li>у тебя нет технической базы или опыта в программировании, но тебе очень хочется работать в сфере IT;</li>
+								<li>у тебя нет абсолютно никаких знаний в сфере программирования или самый базовый уровень;</li>
+								<li>ты уже давно самостоятельно пытаешься разобраться в веб-разработке, но вопросов становится только больше;</li>
+								<li>ты потратил на самостоятельное изучение больше 3 месяцев, но так ничего и не понял;</li>
+								<li>ты не знаешь, у кого попросить о помощи;</li>
+								<li>ты боишься за свое будущее, переживаешь о том, как устроится твоя жизнь, хочешь стабильности.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</section>
+		<div class="call bright-theme start-learning" id="start-learning">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 ">
+						<h3 class="call-title">Начни обучаться<br /> под присмотром наставников</h3>
+						<a class="buy-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_start-learning'); return true;">Приступить к обучению</a></div>
+					<div class="col-lg-6 order-first order-lg-1"><img alt="" class="escort-img" src="img/3.png" /></div>
+				</div>
+			</div>
+		</div>
+		<section class="life-after" id="life-after">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6"><img alt="" class="escort-img" src="img/4.png" /></div>
+					<div class="col-lg-6">
+						<h2 class="section-title">Как будет выглядеть<br /> твоя жизнь после обучения</h2>
+						<ul class="section-list">
+							<li>Ты станешь востребованным специалистом и сможешь найти работу в любом городе любой страны</li>
+							<li>Ты устроишься в престижную IT-компанию, будешь путешествовать по миру, сможешь работать из любой точки планеты</li>
+							<li>У тебя будет финансовая независимость: ты сможешь покупать вещи, которые хочется, сможешь делать дорогие подарки близким</li>
+							<li>Тебя будут окружать единомышленники, вместе с которыми ты сможешь развиваться</li>
+							<li>У тебя будет интересная работа, на которой ты будешь постоянно учиться новому</li>
+							<li>Ты сможешь приобрести собственное жилье</li>
+							<li>У тебя будет время на себя, свое хобби и близких</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="regsec dark-theme" id="program">
+			<div class="container">
+				<p class="call-title tac">Скачать полное описание программы 👇</p>
+				<div class="cbtns">
+					<a href="https://m.me/261763164471973?ref=ml5" class="cbtn cbtn--mes utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<path style="fill:#FFF;" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+							c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024C512,106.112,397.376,0,256,0z"/>
+						<polygon style="fill:#008CFF;" points="281.44,319.2 216.256,249.664 89.056,319.2 228.96,170.656 295.744,240.192 421.376,170.656 "/>
+						</svg>
+						</span>
+						<span class="cbtn__text">Messenger</span>
+					</a>
+
+					<a href="https://vk.com/app6379730_-133030854" data-hash="#l=5;auto=1" class="cbtn cbtn--vk utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve" class=""><g><g>
+							<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571   l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13   c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939   l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568   c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859   c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238   c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849   c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995   c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706   c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125   c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137   c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71   c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851   c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837   c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418   c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431   c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558   c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267   c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427   c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711   C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659   c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981   c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416   c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834   c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851   c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418   c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429   c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274   l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14   c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712   C546.782,404.25,546.115,401.725,545.451,400.298z" data-original="#000000" class="active-path" data-old_color="#FCFBFB" fill="#FFFFFF"/>
+						</g></g> </svg>
+						</span>
+						<span class="cbtn__text">Vkontakte</span>
+					</a>
+
+					<a href="tg://resolve?domain=webheroschool_hello_bot&start=ml5" class="cbtn cbtn--tg" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="45px" height="45px" class=""><g><g id="XMLID_496_">
+							<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#FDFBFB" fill="#FFFFFF"/>
+						</g></g></svg>
+						</span>
+						<span class="cbtn__text">Telegram</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<section class="author" id="author">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 tac">
+						<h2 class="section-title hidden show-lg">Автор школы &mdash; <br />профессиональный <br />веб-разработчик и ментор</h2>
+						<img alt="" class="author-foto" src="img/author.png" /> <i class="author-name">Дарья <br />Пушкарская</i></div>
+					<div class="col-lg-8">
+						<h2 class="section-title hidden-lg">Автор школы &mdash; <br />профессиональный<br /> веб-разработчик и ментор</h2>
+						<p><b>&laquo;После того, как я получила свою первую работу в сфере IT, моя жизнь изменилась кардинально.</b> Я сразу же хотела поделиться своим опытом с теми, кто так же, как и я хотят поменять свою жизнь. Я успела поработать в различных онлайн-школах в качестве наставника, запустить свою менторскую программу и вот, наконец, запустила свою школу. Помимо школы я делюсь своими знаниями в <b><a href="https://habr.com/users/6thsence/posts/" onclick="yaCounter49661218.reachGoal('click_about-author'); return true;" target="_blank">статьях</a>, <a href="https://www.youtube.com/watch?v=gMuxEEw9krA&amp;list=PLY4rE9dstrJwmJZgILzgN4svtdpptYwdK" onclick="yaCounter49661218.reachGoal('click_about-author'); return true;" target="_blank">видео-</a> и <a href="https://soundcloud.com/frontend-weekend/fw-4" onclick="yaCounter49661218.reachGoal('click_about-author'); return true;" target="_blank">аудио-подкастах</a> и <a href="https://www.youtube.com/playlist?list=PLCbA-qzkTK06ZXtOyrLxlgRhuAqVOfNf_" onclick="yaCounter49661218.reachGoal('click_about-author'); return true;" target="_blank">выступлениях на конференциях</a></b>. Я каждый день встречаю людей, которые приходят в программирование из абсолютно противоположных сфер и добиваются невероятного успеха. Но в то же время, я вижу как некоторые опускают руки, потому что большой объем информации в интернете запутывает еще больше.
+						<br />
+						<br />
+						<b>Я работала в крупных IT-организациях (<a href="https://2gis.ru" target="_blank">2GIS</a> и <a href="https://mail.ru/" target="_blank">Mail.ru</a>), а сейчас я работаю в компании <a href="https://www.tinkoff.ru/" target="_blank">Tinkoff.ru</a></b>. Я точно знаю, что ожидают от начинающего разработчика при найме и именно эти знания мной заложены в основу программы обучения. Помимо технических знаний моя команда даст тебе важные навыки, которые помогут в дальнейшем трудоустройстве, правильной подаче себя и карьере. <b>И эту информацию тебе никто не расскажет.</b>&raquo;</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section-bg-wrap" style="background-image: url(img/bg-tin.png);">
+			<section class="tinkov" id="tinkov" style="background-image: url(img/golden-horse.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9">
+							<h2 class="section-title">Партнер школы &ndash; <a href="https://fintech.tinkoff.ru?utm_sourse=webheroschool" onclick="yaCounter49661218.reachGoal('click_tf'); return true;" target="_blank">Tinkoff Fintech</a></h2>
+							<p>Tinkoff Fintech &ndash; это школа, стажировки и чемпионаты для аналитиков и разработчиков. Бесплатная возможность получить актуальные навыки, которые действительно понадобятся при трудоустройстве. Занятия ведут топ-менеджеры компании <a href="https://www.tinkoff.ru/" target="_blank">Tinkoff.ru</a>
+								<br />
+								<br /> Лучшие выпускники моей школы получают возможность пройти упрощенный вариант вступительного экзамена в <a href="https://fintech.tinkoff.ru?utm_sourse=webheroschool" onclick="yaCounter49661218.reachGoal('click_tf'); return true;" target="_blank">Тинькофф Финтех Школу</a> по направлению Frontend. <a href="https://www.tinkoff.ru/" target="_blank">Tinkoff.ru</a> приглашает на работу лучших выпускников Финтех Школы.</p>
+							<a href="https://www.tinkoff.ru/" target="_blank"><img alt="tinkoff" id="tinkov-logo" src="img/tinkoff-logo.png" /></a></div>
+						<div class="col-lg-3">&nbsp;</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="call bright-theme learn-the-best" id="learn-the-best">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h3 class="call-title">Учись у лучших</h3>
+						<a class="buy-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_learn-the-best'); return true;">Приступить к обучению</a></div>
+					<div class="col-lg-6 order-first order-lg-1"><img alt="" class="escort-img" src="img/6.png" /></div>
+				</div>
+			</div>
+		</div>
+		<section class="loft" style="background-image: linear-gradient(to bottom, #1c273a, #918a91);">
+			<div class="bg-mount" style="background-image: url(img/mount.png)">
+				<div class="bg-sea" style="background-image: url(img/sea.png)">
+					<div class="container" style="background-image: url(img/vikings.png)">
+						<div class="row">
+							<div class="col-xl-6">
+								<h2 class="section-title">Партнеры и друзья<br> школы - <a href="https://loftschool.com?utm_sourse=webheroschool" onclick="yaCounter49661218.reachGoal('click_ls'); return true;" target="_blank">LoftSchool</a></h2>
+								<p>Для всех выпускников нашей школы специальные условия для повышения квалификации на курсах LoftSchool и привилегированные условия для участия в совместых мероприятиях.</p>
+							</div>
+							<div class="col-xl-6">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="feedbacks" id="feedbacks">
+			<div class="container">
+				<h2 class="section-title">Обучиться веб-разработке в сжатые сроки,<br> устроиться в IT-компанию и изменить<br> свою жизнь &ndash; реально.</h2>
+				<div class="row">
+					<div class="col-lg-3">&nbsp;</div>
+					<div class="col-lg-9">
+						<h3 class="swiper-title">Пусть за нас скажут эти истории и отзывы:</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-container feedbacks-carousel">
+				<div class="swiper-wrapper">
+					<!--<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="feedbacks__v-cite">
+										<p class="feedbacks__v-tetx">Главный инсайт: сдаваться нельзя. Никогда. <br>Даниэль прошёл 36 собеседований (только вдумайтесь, тридцать шесть!). Что, если бы он остановился после 35го и не пошел на то самое 36ое, на котором его взяли на работу? Изменилась бы его жизнь?</p>
+									</div>
+									<div class="feedbacks__v-author">
+										<img src="img/fb-author/fb-author1.png" alt="" class="feedbacks__v-photo">
+										<div class="feedbacks__v-about">
+											<div class="feedbacks__v-name">Даниэль Бевзюк</div>
+											<div class="feedbacks__v-descr">
+												Junior Web Developer 
+												<div class="feedbacks__v-job">TechTic</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="video">
+										<iframe calss="vf__video" src="https://www.youtube.com/embed/2IpToc8e0Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="feedbacks__v-cite">
+										<p class="feedbacks__v-tetx">Главный инсайт: сдаваться нельзя. Никогда. <br>Даниэль прошёл 36 собеседований (только вдумайтесь, тридцать шесть!). Что, если бы он остановился после 35го и не пошел на то самое 36ое, на котором его взяли на работу? Изменилась бы его жизнь?</p>
+									</div>
+									<div class="feedbacks__v-author">
+										<img src="img/fb-author/fb-author1.png" alt="" class="feedbacks__v-photo">
+										<div class="feedbacks__v-about">
+											<div class="feedbacks__v-name">Даниэль Бевзюк</div>
+											<div class="feedbacks__v-descr">
+												Junior Web Developer 
+												<div class="feedbacks__v-job">TechTic</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="video">
+										<iframe calss="vf__video" src="https://www.youtube.com/embed/mK8Rs53rsnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="feedbacks__v-cite">
+										<p class="feedbacks__v-tetx">Главный инсайт: сдаваться нельзя. Никогда. <br>Даниэль прошёл 36 собеседований (только вдумайтесь, тридцать шесть!). Что, если бы он остановился после 35го и не пошел на то самое 36ое, на котором его взяли на работу? Изменилась бы его жизнь?</p>
+									</div>
+									<div class="feedbacks__v-author">
+										<img src="img/fb-author/fb-author1.png" alt="" class="feedbacks__v-photo">
+										<div class="feedbacks__v-about">
+											<div class="feedbacks__v-name">Даниэль Бевзюк</div>
+											<div class="feedbacks__v-descr">
+												Junior Web Developer 
+												<div class="feedbacks__v-job">TechTic</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="video">
+										<iframe calss="vf__video" src="https://www.youtube.com/embed/yml1q2sVkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="feedbacks__v-cite">
+										<p class="feedbacks__v-tetx">Главный инсайт: сдаваться нельзя. Никогда. <br>Даниэль прошёл 36 собеседований (только вдумайтесь, тридцать шесть!). Что, если бы он остановился после 35го и не пошел на то самое 36ое, на котором его взяли на работу? Изменилась бы его жизнь?</p>
+									</div>
+									<div class="feedbacks__v-author">
+										<img src="img/fb-author/fb-author1.png" alt="" class="feedbacks__v-photo">
+										<div class="feedbacks__v-about">
+											<div class="feedbacks__v-name">Даниэль Бевзюк</div>
+											<div class="feedbacks__v-descr">
+												Junior Web Developer 
+												<div class="feedbacks__v-job">TechTic</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="video">
+										<iframe calss="vf__video" src="https://www.youtube.com/embed/lGKH3QkuxYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>-->
+					<div class="swiper-slide">
+					    <div class="container container--small">
+    						<div class="video">
+    							<iframe calss="vf__video" src="https://www.youtube.com/embed/2IpToc8e0Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+					    <div class="container container--small">
+    						<div class="video">
+    							<iframe calss="vf__video" src="https://www.youtube.com/embed/mK8Rs53rsnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+					    <div class="container container--small">
+    						<div class="video">
+    							<iframe calss="vf__video" src="https://www.youtube.com/embed/yml1q2sVkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+					    <div class="container container--small">
+    						<div class="video">
+    							<iframe calss="vf__video" src="https://www.youtube.com/embed/lGKH3QkuxYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    						</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 f-author"><img alt="" class="f-author-foto" src="img/fb-author/fb-author1.png" /> <i class="f-author-name">Азиз Азизмурадов</i>
+									<p class="f-author-about">Потратил на обучение 4 месяца, сейчас разработчик в компании Clover Group</p>
+									<a class="f-author-sn" href="https://vk.com/azizmuradovar" onclick="yaCounter49661218.reachGoal('click_student-sn'); return true;" target="_blank"><img alt="vk" src="img/social/soc-vk.svg" /></a></div>
+								<div class="col-lg-9">
+									<div class="feedback-text-wrap">
+										<p class="feedback-text">Скорее это будет не отзыв, а просто краткая история знакомства с Дашей и ее помощь мне) Началось все банально и просто - я написал ей в ВК с просьбой помочь в выборе книг для изучения frontend разработки. Она предложила снять видео для того чтобы ответить на многие вопросы, которые волнуют начинающих разработчиков. После этого она сказала что собирается открывать менторство и предложила мне быть одним из первых учеников) я сразу согласился и через недели 2 мы начали заниматься в группе над первым проектом! началось все с верстки, постепенно углублялись в сборщики проектов, JS, линтеры, git и окружение для JS разработчика).
+											<br />
+											<br /> Помимо знаний и практики была возможность общаться с разными известными людьми из комьюнити, например с Андреем Ситником, Тимофеем Чаптыковым и другими людьми, они в свою очередь как то воодушевляли и рассказывали про технологии и не только) После примерно месяцев 3-4 я прошел собеседование в одну из компаний на позицию джуна) за год в компании стал middle разработчиком и работаю по сей день) Менторство Дарьи помогло не только погрузится и войти в IT, но и найти новые знакомства) Так что если кто-то сомневается, то не сомневайтесь) всем удачи).</p>
+										<div class="read-btns"><a class="read-btn read-more">Читать полностью</a> <a class="read-btn read-less">Скрыть</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 f-author"><img alt="" class="f-author-foto" src="img/fb-author/fb-author2.png" /> <i class="f-author-name">Наталья Норбоева</i>
+									<p class="f-author-about">Потратила на обучение 5 месяцев. Сейчас работает frontend-разработчиком в компании &ldquo;Softomate&rdquo;</p>
+									<a class="f-author-sn" href="http://vk.com/divonata" onclick="yaCounter49661218.reachGoal('click_student-sn'); return true;" target="_blank"> <img alt="vk" src="img/social/soc-vk.svg" /></a></div>
+								<div class="col-lg-9">
+									<div class="feedback-text-wrap">
+										<p class="feedback-text">Дарья - мой первый наставник, так что то, как она относилась к нам, зеленым юнцам - для меня было важно, стоит также упомянуть еще одно обстоятельство - я старше чем средний ученик онлайн курсов, и по этому поводу тоже переживала. Даша меня убедила и показала, что общаться можно профессионально без высокомерия со стороны преподавателя, независимо от возраста и умений учеников, при этом не подав все &ldquo;на блюдечке с голубой каемочкой&rdquo;. Это сейчас я понимаю, что профи общаются с учениками разного уровня всегда уважительно. Скорая обратная связь по выполненному домашнему заданию, наверное часов по 18 в сутки (создавалось ощущение, что она немножко киборг :)) - удаленность общения компенсировалась скоростью. Училась у нее по большей части верстке, самые основы программирования я уже знала, но тем не менее отметила простые ассоциации, которые Дарья подобрала для новичков, на тему что такое JS. По итогу курса я получила сертификат одного из лучших учеников, и в этом есть несомненный вклад наставника.</p>
+										<div class="read-btns"><a class="read-btn read-more">Читать полностью</a> <a class="read-btn read-less">Скрыть</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 f-author"><img alt="" class="f-author-foto" src="img/fb-author/fb-author3.png" /> <i class="f-author-name">Алёна Дмитриевская</i>
+									<p class="f-author-about">Обучалась у Дарьи на протяжении двух курсов, сейчас работает в EPAM Systems фронтенд-разработчиком</p>
+									<a class="f-author-sn" href="https://vk.com/alienna" onclick="yaCounter49661218.reachGoal('click_student-sn'); return true;" target="_blank"> <img alt="vk" src="img/social/soc-vk.svg" /></a></div>
+								<div class="col-lg-9">
+									<div class="feedback-text-wrap">
+										<p class="feedback-text">Когда я только пришла на обучение, помню, как многие ребята просились в команду под руководством именно Даши. Я тогда была только-только новичком и ещё не понимала, из-за чего так много шума. В результате рандомного распределения, меня отправили в команду к Даше :) Я тогда ещё даже не подозревала, какие горы мы свернём.. Но, обо всём по порядку :)
+											<br />
+											<br /> Первым очевидным плюсом для меня был тот факт, что обучать меня будет девочка. &ldquo;Как хорошо, что не парень&rdquo;, - подумала тогда я :D. Не знаю, почему, но на тот момент я была уверена, что с девочкой понимание будет лучше. Даша была с каждым из команды на связи, а если куда-то уходила, то обязательно сообщала нам. Отвечать на наши глупые и не очень вопросы 24 часа в сутки, работать и учиться - это вам не лэндосики верстать ;) Мысленно я себе задавала вопросы: &ldquo;А она вообще спит?&rdquo; ибо как всё это успевать, я вообще не представляла.
+											<br />
+											<br /> Во время всего периода обучения можно было наблюдать за успеваемостью других групп. И когда где-то на середине обучения я открыла эти таблички, то просто не поверила глазам: у нашей группы были проставлены все оценки за домашки, были написаны комментарии, когда в то же время у других групп оценки были проставлены другими кураторами от силы за 2-3 домашки либо оценок не было вообще! Нет, я серьёзно. У нас тогда были вопросы типа: &ldquo;А куда мы так спешим? Мы же всё равно всё успеваем&rdquo;. Но Даше было мало :) Она отвечала: &ldquo;Ну отлично, когда закончим с домашками, я вам буду дополнительно маленькие вебинары проводить и от себя задачки выдавать&rdquo;. То есть, помимо обязательных &ldquo;разборов полётов&rdquo; с нашими &ldquo;тут не получилось&rdquo; или &ldquo;я не знаю, как это сделать&rdquo;, нам проводились дополнительные созвоны в скайпе, где она объясняла какую-нибудь тему на НАШ выбор и что НАМ интересно. И это ещё не считая основных вебинаров с преподавателями. В итоге, поток информации получился просто колоссальный.
+											<br />
+											<br /> Естественно, главный выпускной проект у нас был выполнен ещё до конца курса обучения :) Такая гордость была за нашу команду и нескончаемая благодарность Даше за то, что мы всё сдали первые! Ну, согласитесь, приятно же, когда ты в топе ;)
+											<br />
+											<br /> Но какой же лидер команды без мотивации к действиям?) Особенно придавало сил, когда ты уже битый час не можешь написать функцию/пофиксить баг, сил уже нет, как и желания; потихоньку к мыслям подступает что-то вроде &ldquo;не быть мне веб-разработчиком&rdquo;, как тут сообщение от Даши: &ldquo;Давай вместе разбираться :) расскажи, что именно у тебя не получается, что ты не понимаешь?&rdquo;. На простых примерах ей удавалось объяснять порой очень и очень сложные вещи. Мне кажется, это тот самый уровень мастерства и владения материалом, когда ты не просто можешь рассказать человеку &ldquo;как это работает&rdquo;, а когда человек отвечает &ldquo;понял&rdquo; и потом ещё годный код выдаёт. Вот что такое понимание!)
+											<br />
+											<br /> Ну и, конечно же, не последнюю роль играли Дашины слова после выполненной работы: &ldquo;Ты умничка! Видишь, как ты умеешь? Главное, понять, как это работает, а дальше всё получится!&rdquo;. Ну как тут не фигачить, а? :)</p>
+										<div class="read-btns"><a class="read-btn read-more">Читать полностью</a> <a class="read-btn read-less">Скрыть</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 f-author"><img alt="" class="f-author-foto" src="img/fb-author/fb-author4.png" /> <i class="f-author-name">Анна Сычугина</i>
+									<p class="f-author-about">Потратила на обучение 3,5 месяца. Сейчас работает младшим разработчиком в Tinkoff.ru</p>
+									<a class="f-author-sn" href="https://vk.com/annasychugina" onclick="yaCounter49661218.reachGoal('click_student-sn'); return true;" target="_blank"> <img alt="vk" src="img/social/soc-vk.svg" /></a></div>
+								<div class="col-lg-9">
+									<div class="feedback-text-wrap">
+										<p class="feedback-text">В сентябре 2016 года после долгих сомнений твердо для себя решила стать веб-разработчиком. Было очень тяжело сменить курс в противоположную сторону (тогда училась в Бауманке на прикладной математике, программирования было достаточно мало, больше инженерных дисциплин, разной математики). До этого уже прошла курс веб-дизайна в центре Специалист МГТУ им.Н.Э.Баумана (до этого вообще не знала, с чего начать и в какую сферу податься, чтобы влиться в среду веба. Поэтому начала с них), но там, к сожалению, было совсем не то, что я ожидала. Программа была далека от практики, к сожалению, покинула курс почти с нулевыми знаниями и малым представлением о реальных задачах. Оплаченные курсы не оправдали моих ожиданий. Далее по удачной случайности я поступила в образовательный проект Технопарк при мейл ру (начало 2016 года), и там уже, познакомившись с основами веб-разработки, для себя твердо решила развиваться в сторону фронтенд-а. В технопарке было круто, интересно, но все было настолько быстро, непонятно, что не хватало систематизации знаний, практики и все равно не было представления, как все это происходит в реальной жизни.
+											<br /> Тогда я начала искать всякого рода курсы для систематизации и подкрепления полученных знаний, для приобретения уверенности в своих силах. Кроме того, почему-то у меня было убеждение, что девушка не может стать разработчиком :) . Много раз я пыталась отказаться от этой затеи и пойти работать по специальности или стать аналитиком, каждый раз меня терзали сомнения. Поэтому начала искать в поисковике примеры и как раз нашла Дарью Пушкарскую, которая стала для меня наглядным примером гуру в веб-разработке. В первую очередь понравились ее учебные курсы в Loftschool (смотрела их на ютубе), а потом нашла новость о том, что она набирает к себе группу учеников на курс, где выступает ментором.
+											<br /> В этот же день после того, как я написала и рассказала о своей проблеме и о своем желании заниматься, мы сразу же провели по скайпу вводную беседу. В первую очередь понравилась схема задач (по типу kanban , см. методология kanban). Все были поделены на команды и трудились над выполнением какого-либо проекта, который был создан специально для нас. Каждый делал какую-либо одну часть проекта, и каждую неделю мы созванивались и рассказывали о своих успехах или неуспехах, о проделанной работе, а также обсуждали как это лучше сделать, Даша делилась своим опытом и наводила на решение задания, рассказывала, как это можно было сделать лучше, обсуждали будущие задачи. Такой процесс очень мотивировал выполнять задания. Кроме того, развивались навыки работы в команде, что, бесспорно, является очень важным. Так, помогая друг другу, консультируясь непосредственно с Дашей, в долгих обсуждениях мы делали проект. Все было похоже на реальный процесс разработки в реальной компании.
+											<br />
+											<br /> Какие плюсы в обучении с Дашей отметила для себя:
+											<br />
+											<br /> Работа в команде над реальным проектом в спокойном, вдумчивом темпе.
+											<br /> Отсутствие вебинаров и типовых заданий. Была конкретная практическая задача, и ты ее решал. И уже изучал то, что тебе нужно для ее решения.
+											<br /> Полноценные ревью кода от наставника.
+											<br /> Моральная поддержка и советы по поиску работы.
+											<br /> Большой бонус &mdash; к нам каждый месяц приходили известные люди в мире веба , у которых было уже довольно много опыта и отвечали на наши вопросы, делились советами по поиску работы.
+											<br /> В любой момент можно было задать вопрос Даше, созвониться и спросить то, что непонятно. Даже в общем, не только по текущему проекту, который мы делали в команде. Чувствовался индивидуальный подход.
+											<br />
+											<br /> Из того, что можно было бы улучшить, могу только вспомнить процесс формирования команд. Были ребята менее сильные и более сильные в одной команде, что иногда замедляло процесс разработки. Хотя в этом тоже был плюс - ты практиковал себя в качестве ментора и объяснял материал другим ребятам.
+											<br />
+											<br /> Занятия дали уверенность на собеседованиях. Оффер в компаниях уже начали предлагать со второго собеседования. На поиск подходящего места работы ушло около месяца. (у Даши занималась около 4ех месяцев)
+											<br /> Было достаточно предложений (из крупных компания - это предложения о стажировке в mail.ru, работа младшим разработчиком в тинькофф банке) На данный момент мы с Дашей являемся коллегами, и я также (уже чуть больше года) работаю в Тинькофф.ру. (это не специально, так получилось :) ), полученные знания послужили хорошим стартом для работы в компании.
+											<br /> Из всех курсов, которые проходила (технопарк при мейл ру, loftschool), рекомендую курсы менторства Даши.</p>
+										<div class="read-btns"><a class="read-btn read-more">Читать полностью</a> <a class="read-btn read-less">Скрыть</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-next fb-btn">&nbsp;</div>
+				<div class="swiper-button-prev fb-btn">&nbsp;</div>
+				<div class="container relativer">
+					<div class="paginator">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<div class="call dark-theme success-story" id="success-story">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<h3 class="call-title">Стать следующей<br>историей успеха</h3>
+						<a class="buy-btn bright-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_success-story'); return true;">Приступить к обучению</a></div>
+					<div class="col-lg-7 order-first order-lg-1"><img alt="" class="escort-img" src="img/7.png" /></div>
+				</div>
+			</div>
+		</div>
+		<section class="course-program" id="course-program">
+			<div class="container">
+				<h2 class="section-title">Что включает<br>в себя программа?</h2>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c1.png);">&nbsp;</div>
+							<p>Каждый блок программы обучения разбит на множество небольших уроков с практическими заданиями к каждому. Тебе нужно сделать всего лишь 5-10 маленьких упражнений, чтобы сдать весь урок.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c2.png);">&nbsp;</div>
+							<p>Менторы тщательно проверяют все домашние задания, а доступ к следующим урокам открывается только после проверки. Плохо выполненные задания возвращаются на доработку.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c3.png);">&nbsp;</div>
+							<p>Кураторы, менторы и лекторы на протяжении всего процесса обучения будут с вами на связи, чтобы ответить на любой вопрос и оказать поддержку.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c4.png);">&nbsp;</div>
+							<p>У каждого потока есть общий чат, в котором обсуждаются важные вопросы и совместные проблемы. В нашей группе ты не только будешь общаться с единомышленниками и делиться поддержкой с ними, но и заведешь новых друзей.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c5.png);">&nbsp;</div>
+							<p>Знакомство с ведущими разработчиками.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c6.png);">&nbsp;</div>
+							<p>Созвоны в группах с твоим куратором, на которых ты сможешь разобрать свои кейсы.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c7.png);">&nbsp;</div>
+							<p>Самые необходимые технологии, которые нужно знать для первого трудоустройства: git, css, html, js, сборщики и препроцессоры.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c8.png);">&nbsp;</div>
+							<p>Обучение работе в команде, построению процессов в компаниях, прохождению собеседования и составлению резюме.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c9.png);">&nbsp;</div>
+							<p>После окончения школы вы сможете продолжить обучения САМОСТОЯТЕЛЬНО по нашим инструкциям.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c10.png);">&nbsp;</div>
+							<p>В конце обучения у тебя будет готовое портфолио, которое увеличит твои шансы на трудоустройство.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c11.png);">&nbsp;</div>
+							<p>Экскурсии в IT-компании, ворк-шопы и конференции в Москве и Питере, личные встречи со студентами и выездные тусовки за границей.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="program-item">
+							<div class="sprite-icon" style="background-image: url(img/course/c12.png);">&nbsp;</div>
+							<p>У вас будет доступ к закрытой бирже трудоустройства студентов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="regsec dark-theme ">
+			<div class="container">
+				<p class="call-title tac">Скачать полное описание программы  👇</p>
+				<div class="cbtns">
+					<a href="https://m.me/261763164471973?ref=ml5" class="cbtn cbtn--mes utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<path style="fill:#FFF;" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+							c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024C512,106.112,397.376,0,256,0z"/>
+						<polygon style="fill:#008CFF;" points="281.44,319.2 216.256,249.664 89.056,319.2 228.96,170.656 295.744,240.192 421.376,170.656 "/>
+						</svg>
+						</span>
+						<span class="cbtn__text">Messenger</span>
+					</a>
+
+					<a href="https://vk.com/app6379730_-133030854" data-hash="#l=5;auto=1" class="cbtn cbtn--vk utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve" class=""><g><g>
+							<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571   l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13   c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939   l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568   c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859   c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238   c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849   c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995   c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706   c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125   c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137   c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71   c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851   c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837   c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418   c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431   c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558   c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267   c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427   c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711   C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659   c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981   c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416   c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834   c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851   c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418   c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429   c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274   l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14   c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712   C546.782,404.25,546.115,401.725,545.451,400.298z" data-original="#000000" class="active-path" data-old_color="#FCFBFB" fill="#FFFFFF"/>
+						</g></g> </svg>
+						</span>
+						<span class="cbtn__text">Vkontakte</span>
+					</a>
+
+					<a href="tg://resolve?domain=webheroschool_hello_bot&start=ml5" class="cbtn cbtn--tg" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="45px" height="45px" class=""><g><g id="XMLID_496_">
+							<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#FDFBFB" fill="#FFFFFF"/>
+						</g></g></svg>
+						</span>
+						<span class="cbtn__text">Telegram</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<section class="pricing" id="pricing">
+			<div class="container">
+				<h2 class="section-title">То, как <strong class="accent">быстро</strong> ты будешь обучаться, зависит от того, какой пакет ты выберешь</h2>
+				<div class="pricing-variants jcc">
+					<div class="pricing-variant base">
+						<h4>Базовый</h4>
+						<div class="pricing-img" style="background-image: url(img/p1.png);">&nbsp;</div>
+						<ul class="pricing-variant-advantages">
+							<li>Уроки и проверки заданий</li>
+							<li>Чат с ментором</li>
+							<li>Живые вебинары</li>
+							<li>Портфолио</li>
+							<li>Встречи сообщества в городах</li>
+							<li class="disabled-advant">Помощь при трудоустройстве</li>
+							<li class="disabled-advant">Участие в ворк-шопах и конференциях</li>
+							<li class="disabled-advant">Экскурсии в it-компании</li>
+							<li class="disabled-advant">Созвоны с кураторами</li>
+							<li class="disabled-advant">Доступ к чатам после окончания обучения</li>
+							<li class="disabled-advant">Помощь в составлении резюме</li>
+							<li class="disabled-advant">Выездные конференции в теплые страны (перелет и проживание не включено)</li>
+							<li class="disabled-advant">Чат для премиум участников</li>
+							<li class="disabled-advant">Персональный контроль работ</li>
+						</ul>
+						<div class="price tac"><strong>17 500</strong><span> ₽</span></div>
+						<a class="buy-btn btn-holder utm-need" href="http://whs.getcourse.ru/1" onclick="yaCounter49661218.reachGoal('click_base'); yaCounter49661218.reachGoal('go-to-order'); return true;"  target="_blank">Приступить к обучению</a></div>
+					<div class="pricing-variant recomend">
+						<h4>Рекомендуемый</h4>
+						<div class="pricing-img" style="background-image: url(img/p2.png);">&nbsp;</div>
+						<ul class="pricing-variant-advantages">
+							<li>Уроки и проверки заданий</li>
+							<li>Чат с ментором</li>
+							<li>Живые вебинары</li>
+							<li>Портфолио</li>
+							<li>Встречи сообщества в городах</li>
+							<li>Помощь при трудоустройстве</li>
+							<li>Участие в ворк-шопах и конференциях</li>
+							<li>Экскурсии в it-компании</li>
+							<li>Доступ к чатам после окончания обучения</li>
+							<li><b>Созвоны с кураторами</b></li>
+							<li class="disabled-advant">Помощь в составлении резюме</li>
+							<li class="disabled-advant">Выездные конференции в теплые страны (перелет и проживание не включено)</li>
+							<li class="disabled-advant">Чат для премиум участников</li>
+							<li class="disabled-advant">Персональный контроль работ</li>
+						</ul>
+						<div class="price tac"><strong>23 700</strong><span> ₽</span></div>
+						<a class="buy-btn btn-holder utm-need" href="http://whs.getcourse.ru/2" onclick="yaCounter49661218.reachGoal('click_recomend'); yaCounter49661218.reachGoal('go-to-order'); return true;" target="_blank">Приступить к обучению</a></div>
+					<div class="pricing-variant premium">
+						<h4>Премиум</h4>
+						<div class="pricing-img" style="background-image: url(img/p3.png);">&nbsp;</div>
+						<ul class="pricing-variant-advantages">
+							<li>Уроки и проверки заданий</li>
+							<li>Чат с ментором</li>
+							<li>Живые вебинары</li>
+							<li>Портфолио</li>
+							<li>Встречи сообщества в городах</li>
+							<li>Помощь при трудоустройстве</li>
+							<li>Участие в ворк-шопах и конференциях</li>
+							<li>Экскурсии в it-компании</li>
+							<li>Созвоны с менторами</li>
+							<li>Доступ к чатам после окончания обучения</li>
+							<li>Помощь в составлении резюме</li>
+							<li>Выездные конференции в теплые страны (перелет и проживание не включено)</li>
+							<li><b>Чат для премиум участников с ежедневной работой с отчетами по проделанной работе</b></li>
+							<li><b>Приоритетная проверка домашних работ</b></li>
+						</ul>
+						<div class="price tac"><strong>31 700</strong><span> ₽</span></div>
+						<a class="buy-btn btn-holder utm-need" href="http://whs.getcourse.ru/3" onclick="yaCounter49661218.reachGoal('click_premium'); yaCounter49661218.reachGoal('go-to-order'); return true;" target="_blank">Приступить к обучению</a></div>
+				</div>
+				<div class="tac all-period">Стоимость указана за весь период обучения</div>
+				<div class="call-text underprice tac">Сразу после оплаты тебе откроется доступ к&nbsp;личному кабинету и&nbsp;первым урокам. Ты&nbsp;сразу получишь доступ к&nbsp;чату и&nbsp;общению с&nbsp;ментором и&nbsp;одноклассниками</div>
+			</div>
+		</section>
+		<section class="slots" id="slots">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6"><img alt="" class="escort-img" src="img/9.png" /></div>
+						<div class="col-lg-6">
+							<h2 class="section-title accent">Количество мест <br>ограничено</h2>
+							<p>Не откладывай регистрацию и оплату: мест мало в связи с ограниченным количеством кураторов.
+								<br />
+								<br /> Продажа рекомендуемого пакета и пакета премиум ограничена: <b>20 мест в рекомендуемом пакете</b> <b>10 мест в пакете премиум</b></p>
+						</div>
+					</div>
+				</div>
+		</section>
+		<div class="call dark-theme catch" id="catch">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<h3 class="call-title">Успей занять <br>свое место!</h3>
+						<a class="buy-btn bright-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_catch'); return true;">Приступить к обучению </a></div>
+					<div class="col-lg-7 order-first order-lg-1"><img alt="" class="escort-img" src="img/10.png" /></div>
+				</div>
+			</div>
+		</div>
+		<section class="how-change" id="how-change">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6"><img alt="" class="escort-img" src="img/11.png" /></div>
+						<div class="col-lg-6">
+							<h2 class="section-title">Как изменится <br>твоя жизнь?</h2>
+							<p>Представь, как будет выглядеть твоя жизнь, когда ты устроишься на работу в крупную IT-компанию. На что ты потратишь свою первую зарплату? Самое приятное, что после того, как ты устроишься на работу, твоя зарплата будет постоянно расти.
+								<br />
+								<br /> Уже через год после трудоустройства ты будешь зарабатывать как минимум 80000 рублей. Куда ты отправишься в свой отпуск? Какие подарки ты подаришь своим близким? Как изменится твоя жизнь?</p>
+						</div>
+					</div>
+				</div>
+		</section>
+		<div class="call bright-theme start-and-plan" id="start-and-plan">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<h3 class="call-title">Приступай к обучению и сразу начинай планировать свой первый отпуск</h3>
+						<a class="buy-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_start-and-plan'); return true;">Приступить к обучению</a></div>
+					<div class="col-lg-5 order-first order-lg-1"><img alt="" class="escort-img" src="img/12.png" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="call garanty" id="garanty">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5"><img alt="" class="escort-img" src="img/serteficate.png" /></div>
+						<div class="col-lg-7">
+						<div class="text-space">
+							<h3 class="call-title">Даем гарантии</h3>
+							<p>Мы настолько уверены в нашей программе, что готовы предоставить гарантии:
+								<br /> если на протяжении двух недель обучения тебе не понравится формат школы, качество материала или степень сложности, то мы вернем всю стоимость обучения.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="important" id="important">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="section-title">Важно!</h2>
+						<ul class="section-list">
+							<li>Мы поддерживаем наших студентов после окончания школы: есть подписка на чат, где ты можешь остаться за небольшую плату.</li>
+							<li>Ты можешь заниматься в своем темпе и не гнаться за группой: процесс обучения не ограничен по времени.</li>
+							<li>Справится абсолютно каждый! Занятия рассчитаны на изучение любого уровня, а наши менторы всегда помогут и не позволят опустить руки.</li>
+							<li>Не имеет значения сколько тебе лет и какой ты половой принадлежности. Веб-разработчик - это профессия без возраста и пола.</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 order-first order-lg-1"><img alt="" class="escort-img" src="img/13.png" /></div>
+				</div>
+			</div>
+		</section>
+		<div class="call bright-theme be-shure" id="be-shure">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 tac">
+						<h3 class="call-title">Прекрати сомневаться в своих силах. <br>Мы уверены, что у тебя все получится и пройдем с тобой от начала и до твоего трудоустройства.</h3>
+						<a class="buy-btn go-to start-btn" href="#pricing" onclick="yaCounter49661218.reachGoal('click_be-shure'); return true;">Приступить к обучению</a></div>
+				</div>
+			</div>
+		</div>
+		<section class="mb" id="purse">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 mb__left">
+						<img alt="" class="escort-img" src="img/moneybox.png" />
+					</div>
+						<div class="col-lg-6">
+							<h2 class="section-title">Для тех, кто не&nbsp;может<br> приобрести наше<br> обучение разом</h2>
+							<!-- <p class="mb__text">Мы создали для тебя кошелек, чтобы можно было&nbsp;откладывать на&nbsp;учебу. Используй его как <a href="http://lk.webheroschool.ru/purse" target="_blank" class="tdu utm-need" onclick="yaCounter49661218.reachGoal('purse'); yaCounter49661218.reachGoal('go-to-order'); return true;"><b>копилку</b></a>.</p> -->
+							<div class="mb__achieves">
+								<div class="mb__row">
+									<img src="img/wallet.svg" alt="" class="mb__achieveImg">
+									<div class="mb__achieveText">
+										<span>Оплати <a href="http://lk.webheroschool.ru/first_step" class="mb__link go-to utm-need"><b>первую ступень обучения</b></a> за 10 000 рублей и тебе станут доступны:</span>
+										<div class="row mb__lists">
+											<ul class="col-lg-6">
+												<li>вводный блок</li>
+												<li>блок GIT</li>
+												<li>проверка работ</li>
+											</ul>
+											<ul class="col-lg-6">
+												<li>чат для вопросов</li>
+												<li>чат для общения</li>
+												<li>лекции в живом режиме</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="mb__row">
+									<img src="img/hat.svg" alt="" class="mb__achieveImg">
+									<div class="mb__achieveText">Доплати в удобное для тебя время разницу с любым из <a href="#pricing" class="go-to mb__link"><b>пакетов</b></a> и тебе откроется полный доступ к обучению.</div>
+								</div>
+							</div>
+
+							<a class="buy-btn bright-btn utm-need" href="http://lk.webheroschool.ru/first_step" target="_blank" onclick="yaCounter49661218.reachGoal('purse'); yaCounter49661218.reachGoal('go-to-order'); return true;">Приоберсти первую ступень</a>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="contacts bright-theme" id="contacts">
+			<div class="container">
+				<h2 class="section-title tac">Остались вопросы?</h2>
+				<p class="subtitle tac">Оставь e-mail и мы вышлем тебе pdf с подробной программой обучения ;)</p>
+				<div class="cbtns">
+					<a href="https://m.me/261763164471973?ref=ml5" class="cbtn cbtn--mes utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0" encoding="iso-8859-1"?>
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+						<path style="fill:#FFF;" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+							c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024C512,106.112,397.376,0,256,0z"/>
+						<polygon style="fill:#008CFF;" points="281.44,319.2 216.256,249.664 89.056,319.2 228.96,170.656 295.744,240.192 421.376,170.656 "/>
+						</svg>
+						</span>
+						<span class="cbtn__text">Messenger</span>
+					</a>
+
+					<a href="https://vk.com/app6379730_-133030854" data-hash="#l=5;auto=1" class="cbtn cbtn--vk utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve" class=""><g><g>
+							<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571   l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13   c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939   l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568   c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859   c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238   c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849   c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995   c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706   c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125   c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137   c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71   c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851   c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837   c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418   c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431   c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558   c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267   c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427   c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711   C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659   c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981   c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416   c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834   c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851   c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418   c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429   c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274   l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14   c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712   C546.782,404.25,546.115,401.725,545.451,400.298z" data-original="#000000" class="active-path" data-old_color="#FCFBFB" fill="#FFFFFF"/>
+						</g></g> </svg>
+						</span>
+						<span class="cbtn__text">Vkontakte</span>
+					</a>
+
+					<a href="tg://resolve?domain=webheroschool_hello_bot&start=ml5" class="cbtn cbtn--tg" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+						<span class="cbtn__icon">
+						<?xml version="1.0"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="45px" height="45px" class=""><g><g id="XMLID_496_">
+							<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#FDFBFB" fill="#FFFFFF"/>
+						</g></g></svg>
+						</span>
+						<span class="cbtn__text">Telegram</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--<section class="feedbacks vf" id="vf">-->
+		<!--	<div class="container">-->
+		<!--		<div class="section-title">Узнай, <span class="vf__hl">сколько времени</span> нашим студентам понадобилось, чтобы  <span class="vf__hl">изучить веб-разработку</span> и  <span class="vf__hl">найти работу</span></div>-->
+		<!--		<div class="vf__row">-->
+		<!--			<img src="img/utube.svg" alt="" class="vf__icon">-->
+		<!--			<span class="vf__text">Смотри видео-истории выпускников школы</span>-->
+		<!--		</div>-->
+		<!--		<div class="vf__wrapper">-->
+		<!--			<div class="swiper-container video-carousel">-->
+		<!--				<div class="swiper-wrapper">-->
+		<!--					<div class="swiper-slide">-->
+		<!--						<div class="video">-->
+		<!--							<iframe calss="vf__video" src="https://www.youtube.com/embed/2IpToc8e0Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--					<div class="swiper-slide">-->
+		<!--						<div class="video">-->
+		<!--							<iframe calss="vf__video" src="https://www.youtube.com/embed/mK8Rs53rsnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--					<div class="swiper-slide">-->
+		<!--						<div class="video">-->
+		<!--							<iframe calss="vf__video" src="https://www.youtube.com/embed/yml1q2sVkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--					<div class="swiper-slide">-->
+		<!--						<div class="video">-->
+		<!--							<iframe calss="vf__video" src="https://www.youtube.com/embed/lGKH3QkuxYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--			<div class="swiper-button-next fb-btn vf__next"></div>-->
+		<!--			<div class="swiper-button-prev fb-btn vf__prev"></div>-->
+		<!--			<div class="paginator vf__paginator"></div>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--</section>-->
+
+		<section class="mt" id="mt">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<img alt="" class="escort-img" src="img/laptop.svg" />
+					</div>
+					<div class="col-lg-7">
+						<h2 class="section-title">Все еще сомневаешься, что <span class="mt__highlight">веб-разработка - это твое?</span></h2>
+						<p>Участвуй в недельном марафоне от школы всего за 670 рублей и узнай, с чего начать изучать веб-разработку.</p>
+						<p><b>Избавь себя от риска</b> потратить большую сумму денег за обучение. Пройди сначала марафон и пойми, подходит ли тебе эта сфера и можешь ли ты быть программистом.</p>
+						<ul class="mt__ul">
+							<li class="mt__li">
+								<img src="img/icon-mt-1.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Узнаешь, сможешь ли ты стать программистом</p>
+							</li>
+							<li class="mt__li">
+								<img src="img/icon-mt-2.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Стоимость всего 670 рублей</p>
+							</li>
+							<li class="mt__li">
+								<img src="img/icon-mt-3.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Продолжительность - неделя</p>
+							</li>
+						</ul>
+						<a class="buy-btn start-btn bright-btn utm-need" href="/marathon">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="emp dark-theme" id="emp">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="section-title">Работодателям</h2>
+						<p>Если вы ищите в свою команду <b>junior frontend-разработчика</b> с базовыми знаниями, «soft skills» и желанием развиваться и учиться в команде, то <b>оставьте заявку на сайте</b> для работодателей и мы пришлём вам резюме выпускников школы. Вы сможете лично связаться с нашими студентами и <b>пригласить на собеседование.</b></p>
+						<a class="buy-btn start-btn bright-btn" href="/employer">Изучить типовое резюме выпускников</a>
+					</div>
+					<div class="col-lg-6 order-lg-1 order-first">
+						<img alt="" class="escort-img" src="img/15.png" />
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row aic">
+				<div class="col-xl-2 hidden-xl">
+					<a class="logo" href="/">
+						<img src="img/new-logo.svg" alt="">
+					</a>
+				</div>
+				<div class="col-xl-3 ">
+					<ul class="social-btns jcsb">
+						<li><a href="https://t.me/webheropublic" onclick="yaCounter49661218.reachGoal('click_sn'); return true;" target="_blank" title="Telegram"><img alt="" src="img/social/soc-tg.svg" /></a></li>
+						<li><a href="https://vk.com/webheroschool" onclick="yaCounter49661218.reachGoal('click_sn'); return true;" target="_blank" title="VK"><img alt="" src="img/social/soc-vk.svg" /></a></li>
+						<li><a href="https://www.instagram.com/daria_rrraf/" onclick="yaCounter49661218.reachGoal('click_sn'); return true;" target="_blank" title="Instagram"><img alt="" src="img/social/soc-ig.svg" /></a></li>
+						<li><a href="https://www.youtube.com/channel/UCu6uvVSeaaR0ZTyZ66Kqokw?view_as=subscriber" onclick="yaCounter49661218.reachGoal('click_sn'); return true;" target="_blank" title="YouTube"><img alt="" src="img/social/soc-yt.svg" /></a></li>
+					</ul>
+				</div>
+				<div class="col-xl-4 order-first order-xl-1">
+					<a class="small-text" href="mailto:hello@lk.webheroschool.ru">hello@lk.webheroschool.ru</a>
+					<a class="small-text" href="http://whs.getcourse.ru/teach/control" target="_blank">Войти в личный кабинет</a>
+				</div>
+				<div class="col-xl-3 tac">
+					<a class="small-text" href="docs/ПОЛИТИКА%20ОБРАБОТКИ%20ПЕРСОНАЛЬНЫХ%20ДАННЫХ%20Web%20Hero%20School.pdf" target="_blank">Условия конфиденциальности</a>
+				</div>
+				<div class="col-xl-2 hidden show-xl">
+					<a class="logo" href="/">
+						<img src="img/new-logo.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a href="#wait-popup" class="open-popup hidden" id="clck"></a>
+	<div class="white-popup  mfp-hide" id="wait-popup">
+			<!-- <div class="accent-title">Скачай подробную программу нашего обучения.</div>
+			<p class="subtitle tac">Вводи email в форму ниже и забирай программу на своей почте!</p>
+			<div class="cbtns cbtns--column">
+				<a href="https://m.me/261763164471973?ref=ml5" class="cbtn cbtn--mes utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+					<span class="cbtn__icon">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+					<path style="fill:#FFF;" d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+						c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024C512,106.112,397.376,0,256,0z"/>
+					<polygon style="fill:#008CFF;" points="281.44,319.2 216.256,249.664 89.056,319.2 228.96,170.656 295.744,240.192 421.376,170.656 "/>
+					</svg>
+					</span>
+					<span class="cbtn__text">Messenger</span>
+				</a>
+
+				<a href="https://vk.com/app6379730_-133030854" data-hash="#l=5;auto=1" class="cbtn cbtn--vk utm-need" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+					<span class="cbtn__icon">
+					<?xml version="1.0"?>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358;" xml:space="preserve" class=""><g><g>
+						<path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571   l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13   c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939   l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568   c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859   c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238   c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849   c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995   c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706   c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125   c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137   c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71   c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851   c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837   c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418   c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431   c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558   c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267   c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427   c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711   C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659   c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981   c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416   c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834   c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851   c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418   c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429   c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274   l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14   c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712   C546.782,404.25,546.115,401.725,545.451,400.298z" data-original="#000000" class="active-path" data-old_color="#FCFBFB" fill="#FFFFFF"/>
+					</g></g> </svg>
+					</span>
+					<span class="cbtn__text">Vkontakte</span>
+				</a>
+
+				<a href="tg://resolve?domain=webheroschool_hello_bot&start=ml5" class="cbtn cbtn--tg" target="_blank" onclick="yaCounter49661218.reachGoal('mes_click'); return true;">
+					<span class="cbtn__icon">
+					<?xml version="1.0"?>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="45px" height="45px" class=""><g><g id="XMLID_496_">
+						<path id="XMLID_497_" d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412   c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22   c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207   c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146   c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z" data-original="#000000" class="active-path" data-old_color="#FDFBFB" fill="#FFFFFF"/>
+					</g></g></svg>
+					</span>
+					<span class="cbtn__text">Telegram</span>
+				</a>
+			</div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 cntr">
+						<img alt="" class="escort-img" src="img/laptop.svg" />
+					</div>
+					<div class="col-lg-6">
+						<h2 class="section-title">Все еще сомневаешься, что <span class="mt__highlight">веб-разработка - это твое?</span></h2>
+						<p>Участвуй в недельном марафоне от школы всего за 670 рублей и узнай, с чего начать изучать веб-разработку.</p>
+						<p><b>Избавь себя от риска</b> потратить большую сумму денег за обучение. Пройди сначала марафон и пойми, подходит ли тебе эта сфера и можешь ли ты быть программистом.</p>
+						<ul class="mt__ul">
+							<li class="mt__li">
+								<img src="img/icon-mt-1.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Узнаешь, сможешь ли ты стать программистом</p>
+							</li>
+							<li class="mt__li">
+								<img src="img/icon-mt-2.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Стоимость всего 670 рублей</p>
+							</li>
+							<li class="mt__li">
+								<img src="img/icon-mt-3.svg" alt="" class="mt__icon">
+								<p class="mt__litem">Продолжительность - неделя</p>
+							</li>
+						</ul>
+						<a class="buy-btn start-btn bright-btn utm-need" href="/marathon">Узнать подробнее</a>
+					</div>
+				</div>
+			</div>
+			
+	</div>
+
+	<script>
+	var scr = {
+		"scripts": [
+			{ "src": "js/libs.min.js", "async": false },
+			{ "src": "js/common.js", "async": false }
+		]
+	};
+	! function(t, n, r) {
+		"use strict";
+		var c = function(t) {
+			if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+			for (var r = 0; r < t.length; r++) {
+				var c = n.createElement("script"),
+					e = t[r];
+				c.src = e.src, c.async = e.async, n.body.appendChild(c)
+			}
+			return !0
+		};
+		t.addEventListener ? t.addEventListener("load", function() { c(r.scripts); }, !1) : t.attachEvent ? t.attachEvent("onload", function() { c(r.scripts) }) : t.onload = function() { c(r.scripts) }
+	}(window, document, scr);
+	</script>
+
+	<!--utm-->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll('.utm-need').forEach(link=> {
+				let hash_;
+				link.dataset.hash ? hash_ = link.dataset.hash : hash_ = '';
+				link.href = link.href + location.search + hash_;
+			});
+		});
+	</script>
+	<!--/utm-->
+	
+	<script data-skip-moving="true">
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.ru/b8991429/crm/site_button/loader_1_ftgc2q.js');
+	</script>
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '225250528371975');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=225250528371975&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<script>
+	var scr = {
+		"scripts": [
+			{ "src": "js/libs.min.js", "async": false },
+			{ "src": "js/common.js", "async": false }
+		]
+	};
+	! function(t, n, r) {
+		"use strict";
+		var c = function(t) {
+			if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+			for (var r = 0; r < t.length; r++) {
+				var c = n.createElement("script"),
+					e = t[r];
+				c.src = e.src, c.async = e.async, n.body.appendChild(c)
+			}
+			return !0
+		};
+		t.addEventListener ? t.addEventListener("load", function() { c(r.scripts); }, !1) : t.attachEvent ? t.attachEvent("onload", function() { c(r.scripts) }) : t.onload = function() { c(r.scripts) }
+	}(window, document, scr);
+	</script>
+
+	<!--utm-->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll('.utm-need').forEach(link=> {
+				let hash_;
+				link.dataset.hash ? hash_ = link.dataset.hash : hash_ = '';
+				link.href = link.href + location.search + hash_;
+			});
+		});
+	</script>
+	<!--/utm-->
+	
+	<script data-skip-moving="true">
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.ru/b8991429/crm/site_button/loader_1_ftgc2q.js');
+	</script>
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '225250528371975');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=225250528371975&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+
+
+</body>
+
+</html>

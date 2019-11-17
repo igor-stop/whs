@@ -1,0 +1,15 @@
+include ../config/config
+include ../mixins/index
+include ../functions/index
+include ../variables/index
+
+block  variables 
+
+doctype html
+html(lang=lang)
+	head
+		include ../includes/head
+	body#body
+		main.page
+			block content
+		include ../includes/scripts

@@ -1,0 +1,318 @@
+.mtFirst
+	padding: 40px 0 50px
+	@include flex(row, center, center, nowrap)
+	&__
+		&title
+			font-size: 29px
+			
+			br
+				display: none
+		&description
+			font-size: 12px
+			margin-bottom: 35px
+			padding: 10px
+			background-color: rgba(0, 0, 0, .2)
+			border-radius: 4px
+
+.mtWho
+	padding: 60px 0 85px
+	&::before,
+	&::after
+		display: none
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 29px
+			padding: 10px 0
+
+		&list
+			max-width: 455px
+		&li 
+			font-size: 12px
+
+.mtAfter
+	padding: 90px 0 40px
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 55px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 26px
+			padding: 9px 0
+.mtAuthor
+	padding: 100px 0
+	&__
+		&row
+			margin-top: 0px
+			@include flex(row, space-between, flex-start, nowrap)
+		&author
+			font-size: 12px
+			text-transform: uppercase
+			text-align: center
+		&name
+			font-size: 25px
+			line-height: 1
+			text-align: center
+
+		&descr
+			font-size: 10px
+			line-height: 1.2
+		&text
+			color: $white
+			font-size: 12px
+			line-height: 15px
+			margin-bottom: 34px
+			border-left: none
+			padding: 15px
+			border-radius: 4px
+			background: $tcolor
+			& > b 
+				font-family: $mainBold
+		&bottom
+			width: 100%
+			@include flex(column, flex-start, center, nowrap)
+		&see
+			max-width: 100%
+			text-align: center
+			font-size: 12px
+		&arrow
+			display: none
+		&public
+			max-width: 180px
+			margin: 25px 0 20px
+.mtMapathone
+	padding: 0 0 60px
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 70px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 29px
+			padding: 9px 0
+
+		&li
+			@include flex(column, flex-start, center, nowrap)
+			margin-bottom: 40px
+		&iconWrap
+			margin: 0 0 10px
+		&icon
+			max-width: 300px
+		&descr 
+			max-width: 265px
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+
+.mtPlan
+	padding: 95px 0 
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 29px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 27px
+			padding: 9px 0
+
+		&list
+			padding: 0 7px
+
+		&li
+			margin-bottom: 17px
+			font-size: 12px
+			line-height: 15px
+			padding-left: 42px
+			position: relative
+			&::before 
+				font-size: 30px
+				line-height: 1
+				left: 4px
+
+.mtLife
+	padding: 120px 0
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 23px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 27px
+			padding: 9px 0
+
+		&descr
+			max-width: 774px
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			margin: 0 auto
+			margin-bottom: 35px
+
+.mtFedback
+	padding-top: 110px
+	.mtContainer
+		padding: 0
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 23px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 27px
+			padding: 9px 0s
+			&::after
+				display: none
+		&subTitle
+			margin-bottom: 10px	
+		&row
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+		&right
+			width: 100%
+			padding: 15px 11px
+			&::before
+				display: none
+		&left
+			margin-bottom: 75px
+		&buttons
+			display: block
+		&text
+			max-height: 220px
+			height: auto
+			overflow: hidden
+			transition: max-height .3s ease
+			&.open
+				max-height: 800px
+
+
+.mtQ
+	padding: 100px 0 54px
+	&__
+		&title 
+			background-color: $light
+			background-size: 22px 22px
+			background-position: 0 0, 11px 11px
+			background-image: linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329), linear-gradient(45deg, #edc329 25%, transparent 25%, transparent 75%, #edc329 75%, #edc329)
+			margin-left: -20px
+			margin-right: -20px
+			width: calc(100% + 40px)
+			margin-bottom: 23px
+		&titleText
+			background: $light
+			width: calc(100% - 66px)
+			display: inline-block
+			font-size: 29px
+			padding: 9px 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mtCard
+	min-height: 0px
+	border-radius: 8px 
+	padding: 30px 15px
+	width: calc(100% - 40px)
+
+	&--
+		&special
+			.mtCard__caption
+				margin-bottom: 15px
+				font-size: 20px
+
+			&::before,
+			&::after 
+				display: none
+		&watch
+			&::after 
+				display: none
+	&__
+		&caption
+			font-size: 24px
+			margin: 0 auto 45px 
+			max-width: 600px
+			&--
+				&sml
+					font-size: 20px
+					br
+						display: none
+		&dreamer
+			width: 205px
+			top: -212px
+			right: -20px
+		&descr
+			margin-bottom: 35px
+			font-size: 12px
+			line-height: 14px
+			max-width: 600px
+			letter-spacing: 0
+		&tip
+			font-size: 14px
+		&start
+			margin-left: 55px
+			font-size: 14px
+

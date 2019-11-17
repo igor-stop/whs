@@ -1,0 +1,153 @@
+@media only screen and (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+    line-height: 1.3; }
+    .title::after {
+      height: 55%;
+      left: 10px;
+      top: 15px; }
+    .title--small {
+      font-size: 21px; }
+    .title--hidden {
+      display: inline-block;
+      line-height: 53px;
+      font-size: 40px;
+      margin-bottom: 40px; }
+    .title--hide {
+      display: none; }
+  .secStart {
+    padding: 20px 15px;
+    text-align: center; }
+    .secStart__logo {
+      margin-bottom: 70px; }
+    .secStart__text {
+      font-size: 16px; }
+  .secWe {
+    background-color: rgba(69, 68, 107, 0.08);
+    padding: 50px 15px;
+    text-align: center; }
+    .secWe__imgWrap {
+      max-width: 270px;
+      margin: 0 auto 30px; }
+      .secWe__imgWrap::after {
+        background-color: #F1A32F; }
+    .secWe__textWrap {
+      max-width: 100%; }
+    .secWe__text {
+      font-size: 16px;
+      line-height: 1.3;
+      text-align: left; }
+  .highLight {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 10px 35px;
+    font-size: 16px;
+    line-height: 1.3; }
+    .highLight__in {
+      right: 50%;
+      transform: translateX(50%) translateY(50%); }
+  .secSkills {
+    padding: 50px 15px; }
+    .secSkills::before {
+      height: 100%; }
+    .secSkills__paper {
+      padding: 50px 35px;
+      background: #F0F1F6;
+      border-radius: 22px;
+      box-shadow: 0px 4px 70px rgba(0, 0, 0, 0.15);
+      max-width: 560px; }
+      .secSkills__paper::before {
+        display: none; }
+    .secSkills__title {
+      line-height: 1.1;
+      font-size: 23px;
+      margin-bottom: 30px; }
+    .secSkills__listItem {
+      max-width: 100%;
+      width: 100%; }
+    .secSkills__item {
+      font-size: 16px; }
+    .secSkills__plus {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 100%; }
+    .secSkills__bottom {
+      justify-content: center;
+      text-align: center; }
+  .secForm {
+    padding: 50px 15px; }
+    .secForm__cont {
+      padding: 40px 15px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); }
+    .secForm__text {
+      font-size: 16px;
+      margin: 20px 0; }
+    .secForm__inputWrap {
+      width: 100%; }
+      .secForm__inputWrap--ta {
+        width: 100%;
+        margin-bottom: 40px; }
+    .secForm__input {
+      font-size: 14px;
+      height: 55px; }
+      .secForm__input--ta {
+        height: 100px; }
+  .footer {
+    padding: 35px 15px; }
+    .footer__cont {
+      flex-direction: column; }
+    .footer__list {
+      margin: 30px 0; }
+    .footer__write {
+      font-size: 16px; }
+  ::-webkit-input-placeholder {
+    font-size: 14px; }
+  :-moz-placeholder {
+    font-size: 14px; }
+  ::-moz-placeholder {
+    font-size: 14px; }
+  :-ms-input-placeholder {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 768px) {
+  .secStart {
+    padding: 40px 15px 120px;
+    text-align: center; }
+    .secStart__head .title {
+      display: inline;
+      background-color: #FFD22D;
+      line-height: 1.5; }
+      .secStart__head .title::after {
+        display: none; }
+    .secStart__text {
+      max-width: 100%;
+      margin-bottom: 60px; }
+    .secStart__content {
+      width: 100%; }
+    .secStart__right {
+      display: none; }
+  .secWe {
+    padding: 30px 15px 60px;
+    overflow: hidden; }
+    .secWe__wrap {
+      align-items: flex-start;
+      position: relative; }
+    .secWe__left {
+      width: 60%;
+      position: absolute;
+      transform: translateX(-70px) translateY(-10px); }
+    .secWe__right {
+      width: 100%; }
+    .secWe__imgWrap {
+      max-width: 194.59px;
+      width: 100%; }
+    .secWe__text {
+      max-width: 59%;
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 80px; }
+  .secSkills__title {
+    font-size: 21px; }
+  .secSkills__paper {
+    padding: 30px 15px; } }

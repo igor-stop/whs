@@ -1,0 +1,52 @@
+.enFirst
+	position: relative
+	display: block
+	min-height: 100px
+	&__
+		&logo
+			margin: 0 auto 35px
+			display: block
+		&right 
+			display: none
+		&left
+			text-align: center
+			@include flex(column, flex-start, center, nowrap)
+			padding: 0
+			max-width: 100%
+		&img--mobile
+			display: block
+			max-width: 400px
+			margin-left: auto
+			margin-right: auto
+		&for
+			font-size: 18px
+			&::after
+				top: -9px
+		&start
+			text-align: left
+			
+.title 
+	&__
+		&text
+			font-size: 28px
+.enGlish
+	padding: 42px 0 20px
+	.enContainer
+		display: none
+	&__
+		&stats
+			display: block
+
+		&statsText
+			position: relative
+			&::before
+				content: url(../img/stats-arrow.svg)
+				position: absolute
+				left: calc(50% - 120px)
+				bottom: 100%
+
+.enCourse
+	&__
+		&column 
+			width: 100%
+

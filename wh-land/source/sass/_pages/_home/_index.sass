@@ -1,0 +1,672 @@
+/* YOUR STYLES ARE STARTING HERE */
+.mtFirst
+	position: relative
+	background: $tcolor linear-gradient(246deg, rgba(0, 41, 127, 0) 0%, rgba(89, 41, 130, 0.5) 100%)
+	padding: 50px 0 80px
+	color: $white
+	min-height: 100vh
+	@include flex(row, center, center, nowrap)
+	&__
+		&row
+			margin-top: 21px
+			@include flex(row, space-between, center, nowrap)
+		&left 
+			max-width: 530px
+			width: 100%
+			padding-right: 20px
+		&right 
+			max-width: 325px
+			width: 100%
+			position: relative
+			padding-right: 20px
+		&img
+			width: 100%
+			border-radius: 4px
+
+		&title
+			color: $white
+			font-family: $mainBlack
+			font-size: 35px
+			line-height: 1.2
+			margin-bottom: 15px
+			& > span 
+				position: relative
+				z-index: 2
+				background: linear-gradient(to bottom, transparent 0%,  transparent 65%,  $light 65%, $light 90%, transparent 90%,  transparent 100%) no-repeat 15px 0 
+		&description
+			color: rgba($white, .9)
+			font-family: $mainMedium
+			font-size: 13px
+			line-height: 1.2 
+			display: block
+			margin-bottom: 30px
+			& > b 
+				font-family: $mainBold
+		&imgWrap
+			border-radius: 4px
+		&imgDescr
+			padding: 17px 15px
+			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25)
+			border-radius: 4px
+			background-color: $light
+			font-family: $mainMedium
+			color: #28365a
+			font-size: 11px
+			line-height: 14px
+			position: absolute
+			right: 0px
+			bottom: -20px
+			max-width: 255px
+			& > b 
+				font-family: $mainBold
+		&start
+			margin-top: 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			p
+				font-size: 16px
+				font-weight: bold
+			span 
+				font-size: 14px
+		&startIcon
+			margin-right: 12px
+
+.mtWho
+	padding: 110px 0 125px
+	position: relative
+	z-index: 2
+	&::before,
+	&::after
+		content: '?'
+		font-family: $mainBlack
+		color: $tcolor
+		position: absolute
+	&::before
+		font-size: 70px
+		top: 10%
+		left: calc(47% - 250px)
+		transform: rotate(20deg)
+		opacity: .2
+	&::after
+		font-size: 80px
+		top: 11%
+		right: calc(48% - 250px)
+		transform: rotate(-20deg)
+		opacity: .7
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 38px
+		&titleText
+			padding: 0 10px
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px  
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&list
+			max-width: 695px
+			width: 100%
+			margin: 0 auto
+			position: relative
+			&::before,
+			&::after
+				content: '?'
+				font-family: $mainBlack
+				color: $tcolor
+				position: absolute
+				line-height: .8
+			&::before
+				font-size: 160px
+				top: 35px
+				left: -50px
+				transform: rotate(-20deg) translateX(-100%)
+				opacity: .5
+			&::after
+				font-size: 140px
+				top: -10px
+				right: -20px
+				transform: rotate(20deg) translateX(100%)
+				opacity: .3
+		&li
+			padding-left: 19px
+			opacity: 0.8
+			color: $tcolor
+			font-family: $mainMedium
+			position: relative
+			&:not(:last-child)
+				margin-bottom: 10px
+			&::before 
+				content: ''
+				width: 6px 
+				height: 6px
+				background-color: $tcolor
+				border-radius: 50%
+				display: block
+				position: absolute
+				top: 5px
+				left: 0
+			& > b 
+				font-family: $mainBold
+.mtAfter
+	padding: 110px 0 75px
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 85px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&list
+			@include flex(row, center, flex-start, wrap)
+			max-width: 780px
+			width: 100%
+			margin: 0 auto
+
+		&li 
+			width: 33%
+			min-width: 210px
+			@include flex(column, space-between, center, nowrap)
+			text-align: center
+			margin-bottom: 55px
+			height: 195px
+		&imgWrap
+			width: 100%
+			@include flex(column, center, center, nowrap)
+			height: 102px
+		&img
+			max-height: 102px
+		&desc
+			max-width: 233px
+			& > b 
+				font-family: $mainBold
+
+.mtAuthor
+	padding: 130px 0 100px
+	&__
+		&row
+			margin-top: 21px
+			@include flex(row, space-between, center, nowrap)
+		&left
+			max-width: 309px
+			width: 100%
+		&right 
+			width: calc(100% - 375px)
+		&imgWrap 
+			position: relative
+			&::before 
+				content: ''
+				height: 100%
+				width: 100%
+				background-color: $light
+				position: absolute
+				z-index: 1
+				right: -5px
+				bottom: -5px
+				border-radius: 4px
+		&img 
+			position: relative
+			z-index: 2
+			border-radius: 4px
+			width: 100%
+		&author
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 20px
+			line-height: 23px
+		&name
+			margin-bottom: 10px
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px
+			line-height: 47px
+		&descr
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 1.3
+			margin-bottom: 23px
+			& > b 
+				font-family: $mainBold
+		&text
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 44px
+			border-left: 6px solid $light
+			padding-left: 22px
+			& > b 
+				font-family: $mainBold
+		&bottom
+			width: 100%
+			@include flex(row, space-between, center, nowrap)
+		&see
+			max-width: 143px
+			color: rgba($tcolor, .3)
+			font-size: 8px
+			font-family: $mainMedium
+			line-height: 1.2 
+			position: relative
+		&arrow
+			position: absolute
+			top: 33px 
+			left: -25px
+		&public
+			max-width: 136px
+			width: 100%
+			@include flex(row, space-between, center, nowrap)
+		&link
+			transition: .15s
+			&:hover
+				*
+					fill: $light
+		&pubItem
+			&:hover
+				opacity: .7
+.mtMapathone
+	padding: 100px 0 90px
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 34px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&steps
+			max-width: 673px
+			width: 100%
+			margin: 0 auto
+		&li
+			@include flex(row, flex-start, center, nowrap)
+			margin-bottom: 23px
+		&iconWrap
+			margin-right: 26px 
+		&icon
+			max-width: 54px
+		&descr 
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 19px
+			& > b 
+				font-family: $mainBold
+
+.mtPlan
+	padding: 120px 0 110px
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 34px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&list
+			max-width: 786px
+			width: 100%
+			margin: 0 auto
+			counter-reset: lishechka
+
+		&li
+			margin-bottom: 22px
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 19px
+			padding-left: 54px
+			position: relative
+			& > b 
+				font-family: $mainBold
+			&::before 
+				counter-increment: lishechka
+				content: counter(lishechka) '.'
+				position: absolute
+				left: -4px
+				top: -2px
+				color: $tcolor
+				font-family: $mainBlack
+				font-size: 40px
+				line-height: 47px
+
+.mtLife
+	padding: 120px 0
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 15px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&descr
+			max-width: 774px
+			color: rgba($tcolor, .8)
+			font-family: $mainMedium
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			margin: 0 auto
+			margin-bottom: 40px
+			& > b 
+				font-family: $mainBold
+		&row
+			@include flex(row, center, flex-start, wrap)
+		&imgWrap
+			margin: 0 4px 8px
+		&img
+			height: 183px
+			width: auto
+
+
+
+.mtFedback
+	padding-top: 118px
+
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+			position: relative
+			&::after
+				content: url(../img/flag.svg)
+				position: absolute
+				top: 50%
+				left: 100%
+				transform: translateY(-50%)
+		&subTitle
+			text-align: center
+			font-weight: 500
+			font-size: 16px
+			color: #442A82
+			margin-bottom: 70px
+		&wrapper
+			position: relative
+		&carousel
+			max-width: 795px
+			width: 100%
+			margin: 0 auto
+		&row
+			@include flex(row, space-between, flex-start, wrap)
+		&left 
+			width: 155px
+			padding: 0 5px
+			text-align: center
+			margin-bottom: 40px
+		&photo
+			max-width: 127.85px
+			width: 100%
+			height: auto
+			border-radius: 50%
+			margin: 0 auto 15px
+		&name
+			font-family: $mainBold
+			font-size: 18px
+			width: 100%
+			text-align: center
+		&right
+			width: calc(100% - 186px)
+			background: #FFF
+			box-shadow: 0px 4px 25px rgba(68, 42, 130, 0.3)
+			border-radius: 7px
+			padding: 20px 24px
+			position: relative
+			z-index: 2
+			&::before
+				content: ''
+				height: 35px
+				width: 25px
+				-webkit-box-sizing: border-box
+				box-sizing: border-box
+				border: 20px solid transparent
+				border-right-color: #fff
+				position: absolute
+				left: -40px
+				top: 45px
+		&text
+			font-size: 14px
+			line-height: 1.2
+			b
+				display: block
+				font-family: $mainBold
+				margin-bottom: 5px
+			p
+				margin-bottom: 5px
+				display: block
+		&buttons
+			display: none
+			text-align: center
+			font-size: 12px
+			font-family: $mainBold
+			margin-top: 19px
+			.read-less
+				display: none
+
+
+
+
+
+
+
+
+.mtQ
+	padding: 0 0 75px
+	&__
+		&title
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+		&titleText 
+			padding: 0 10px   
+			color: $tcolor
+			font-family: $mainBlack
+			font-size: 40px   
+			line-height: 1.2
+			background: linear-gradient(to bottom, transparent 0%,  transparent 50%,  $light 50%, $light 100%) no-repeat
+		&text 
+			max-width: 522px
+			width: 100%
+			text-align: center
+			margin: 0 auto
+			color: rgba($tcolor, .8)
+			font-size: 16px
+			line-height: 19px
+			a
+				font-family: $mainBold
+				color: rgba($tcolor, .8)
+				&:hover
+					color: $light
+					*
+						fill: $light
+			em
+				text-decoration: underline
+				font-style: normal
+
+			b
+				font-family: $mainBold
+				color: rgba($tcolor, .8)
+
+.ig-icon
+	vertical-align: middle
+
+.mtCard
+	width: calc(100% - 140px)
+	margin: 0 auto
+	min-height: 400px
+	border-radius: 8px 
+	position: relative
+	background: $tcolor linear-gradient(246deg, rgba(0, 41, 127, 0) 0%, rgba(89, 41, 130, 0.5) 100%)
+	@include flex(column, center, center, nowrap)
+	.mtButton
+		position: relative
+		z-index: 1
+
+
+	&--
+		&light
+			background: $light
+			.mtCard__caption 
+				color: $tcolor
+		&special
+			@include flex(column, flex-end, center, nowrap)
+			padding-bottom: 23px
+			.mtCard__caption
+				margin-bottom: 8px
+			.mtButton
+				margin-bottom: 20px
+			&::before 
+				content: url('../img/tkts.svg')
+				position: absolute
+				left: 0
+				bottom: -5px
+				z-index: 0
+			&::after 
+				content: url('../img/palm.svg')
+				position: absolute
+				right: 0
+				bottom: -5px
+				z-index: 0
+		&watch
+			margin-bottom: 60px
+			&::after 
+				content: url('../img/sandclosk.svg')
+				position: absolute
+				right: 0
+				bottom: -5px
+				z-index: 0
+	&__
+		&caption
+			color: $white
+			font-size: 40px
+			font-family: $mainBlack
+			line-height: 1.2
+			text-align: center
+			max-width: 950px
+			width: 100%
+			margin: 0 auto 55px 
+			position: relative
+			z-index: 1
+			&--
+				&small
+					margin-bottom: 25px
+		&dreamer
+			z-index: 1
+			width: 345px
+			position: absolute
+			right: -70px
+			top: -355px
+		&descr
+			margin-bottom: 45px
+			color: rgba($tcolor, .8)
+			text-align: center
+			font-family: $mainMedium
+			font-size: 20px
+			line-height: 27px
+			max-width: 685px
+			width: 100%
+			letter-spacing: 1px
+			position: relative
+			& > b
+				font-family: $mainBold
+		&tip
+			color: rgba($tcolor, .5)
+			font-family: $mainMedium
+			font-size: 14px
+			font-weight: 600
+			z-index: 1
+			visibility: hidden
+		&start
+			font-size: 22px
+			color: #fff
+			font-weight: bold
+			position: relative
+			margin-bottom: 25px
+			&::before
+				content: url(../img/start-up.svg)
+				margin-right: 17px
+				position: absolute
+				right: 100%
+				top: -2px
+
+
+.mtContainer
+	max-width: 1070px
+	width: 100%
+	padding: 0 20px
+	margin: 0 auto
+	&--
+		&less 
+			max-width: 985px
+.mtButton
+	width: 208px
+	height: 50px
+	border-radius: 4px
+	background-color: $light
+	@include flex(row, center, center, nowrap)
+	text-align: center
+	color: #28365a
+	font-family: $mainBold
+	font-size: 14px
+	line-height: 16px
+	text-transform: uppercase
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25)
+	transition: all .15s
+	&:hover
+		transform: scale(1.03)
+		box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15)
+	&:active
+		transform: scale(1)
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4)
+
+	&--
+		&dark
+			color: $white
+			background-color: $tcolor
+		&big 
+			width: 243px
+
+/* AND END HERE */
+
+@media screen and (max-width: 1280px)
+	@import '_1280.sass'
+
+@media screen and (max-width: 1024px)
+	@import '_1024.sass'
+
+@media screen and (max-width: 768px)
+	@import '_768.sass'
+
+@media screen and (max-width: 320px)
+	@import '_320.sass'

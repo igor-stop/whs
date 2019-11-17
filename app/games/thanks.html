@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Games - Web Hero School</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--OG-->
+	<meta property="og:title" content="Web Hero School">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://webheroschool.ru">
+	<meta property="og:image" content="../img/ogimage.jpg">
+	<!--/OG-->
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="192x192" href="../img/favicons/webclip.jpg">
+	<link rel="icon" type="image/png" sizes="192x192" href="../img/favicons/webclip.jpg">
+	<link rel="shortcut icon" href="../img/favicons/favicon.jpg" type="image/x-icon">
+	<!--/favicon-->
+
+	<link rel="stylesheet" href="../css/main.min.css">
+	
+	<!-- Custom Browsers Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#45446c">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#45446c">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#45446c">
+	<!-- Optimized loading JS Start -->
+</head>
+<body>      
+<main>
+	<div class="tycontainer">
+		<div class="tyWrap">
+			<h2 class="section-title ty-title">Подожди! У меня есть еще кое-что для тебя…</h2>
+			<div class="video-container container">
+				<div class="thumb-wrap">
+					<div id="player"></div>
+				</div>
+			</div>
+			<div id="button_wrap" class="button-wrap">
+				<a href="http://lk.webheroschool.ru/start_oto" target="_blank" class="buy-btn bright-btn video-button utm-need" id="button">Успеть занять место</a>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+	<script type="text/javascript">
+		var YOUR_TIME = 335; // Время видео, на котором должна появиться кнопка в секундах (если 2 минуты, то пишете 120)
+		var VIDEO_HEIGHT = 315; // Высота вашего видео
+		var VIDEO_WIDTH = 560; // Ширина вашего видео
+		var VIDEO_ID = 'c-btdglU4Z8'; // ID вашего видео на YouTube, берется из ссылки на видео
+
+		var timer, player;
+
+		var tag = document.createElement('script');
+		var button = document.getElementById('button_wrap');
+
+		var time_current = 0;
+
+		tag.src = "https://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		function onYouTubeIframeAPIReady()
+		{
+			player = new YT.Player('player', {
+				height: VIDEO_HEIGHT,
+				width: VIDEO_WIDTH,
+				videoId: VIDEO_ID,
+				events: {
+					'onReady': onPlayerReady,
+					'onStateChange': onPlayerStateChange
+				},
+				playerVars: {
+					'controls': 0,
+					'rel': 0,
+					'showinfo': 0
+        		}
+			});
+		}
+
+		function onPlayerStateChange(event)
+		{
+			if( event.data == YT.PlayerState.PLAYING )
+				timer = setInterval( checkTime, 400 );
+			else	
+				clearInterval( timer );
+		}
+
+		function onPlayerReady(event)
+		{
+			event.target.playVideo();
+		}
+
+		function checkTime()
+		{
+			time_current = player.getCurrentTime().toString();
+
+			time_current = time_current.substring( 0, time_current.indexOf('.') );
+
+			if( parseInt( time_current ) >= parseInt( YOUR_TIME.toString() ) )
+			{
+				button.classList.add('show');
+				clearInterval( timer );
+			}
+		}
+	</script>
+
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '225250528371975');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=225250528371975&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+
+	<!--utm-->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll('.utm-need').forEach(link=> link.href = link.href + location.search);
+		});
+	</script>
+	<!--/utm-->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(52040928, "init", {
+	        id:52040928,
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/52040928" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

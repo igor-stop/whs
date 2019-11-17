@@ -1,0 +1,91 @@
+.mtFirst
+	position: relative
+	display: block
+	min-height: 100px
+	&__
+		&logo
+			margin: 0 auto
+			display: block
+		&right 
+			display: none
+		&left
+			text-align: center
+			@include flex(column, flex-start, center, nowrap)
+			padding: 0
+			max-width: 100%
+
+.mtWho
+	&__
+		&list
+			&::before,
+			&::after
+				display: none
+
+
+.mtAuthor
+	&__
+		&row 
+			flex-direction: column
+			align-items: center
+			flex-wrap: wrap
+		&left
+			max-width: 175px
+			margin-bottom: 27px
+		&img 
+			width: 100%
+		&imgWrap 
+			&::before 
+				bottom: -2px
+		&right
+			max-width: 500px
+			width: 100%
+		&text
+			position: relative
+			z-index: 2
+			&::before 
+				content: ''
+				display: block
+				width: 40px
+				height: 40px
+				background:  radial-gradient(circle at 88%, $white,  $white 50%, $tcolor  50%, $tcolor 0) 0px 15px
+				transform: rotate(180deg)
+				position: absolute
+				bottom: calc(100% - 19px)
+				right: 20px
+				border-radius: 50%
+			&::after 
+				content: ''
+				display: block
+				width: 45px
+				height: 20px
+				background: $tcolor
+				position: absolute
+				top: 0px
+				right: 20px
+
+.mtLife
+	&__				
+		&imgWrap
+			margin: 0 2.5px 2px
+			overflow: hidden
+			position: relative
+			&:nth-child(1)
+				width: 59%
+			&:nth-child(2)
+				width: 35.2%
+			&:nth-child(3)
+				width: 31%
+			&:nth-child(4)
+				width: 31%
+			&:nth-child(5)
+				width: 31%
+		&img 
+			height: auto
+			width: 100%
+
+
+.mtCard
+	&__
+		&dreamer
+			display: none
+	
